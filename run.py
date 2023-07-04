@@ -43,11 +43,12 @@ def get_user_input():
             print("""\nYou have unlocked the Gun. You're the RPS MASTER!
                   ︵  
                  |  |
-              ---'  '__________
-                     __________)
+              ---'  '________
+                     _________)
                     (_____)
                     (____)
               ---.__(___)""")
+            break
         else:
             print("\nERROR! Please select one of the valid options.")
     return user
@@ -124,7 +125,15 @@ def result(user, computer):
                     (____)
               ---.__(___)""")
     elif user == "gun":
-            print()
+            print("""
+             __                                _                  
+            |  |                              | |                 
+            |  |      ___  __ _  ___ _ __   __| |
+            |  |     / _ \/ _` |/ _ \ '_ \ / _` |
+            |  |____|  __/ (_| |  __/ | | | (_| |
+            |_______|\___|\__, |\___|_| |_|\__,_|
+                           __/ |
+                          |___/""")
     else:
                 print("""\nYou Lose!
              _________
