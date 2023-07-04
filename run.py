@@ -124,16 +124,6 @@ def result(user, computer):
                     (_____)
                     (____)
               ---.__(___)""")
-    elif user == "gun":
-            print("""
-             __                                _                  
-            |  |                              | |                 
-            |  |      ___  __ _  ___ _ __   __| |
-            |  |     / _ \/ _` |/ _ \ '_ \ / _` |
-            |  |____|  __/ (_| |  __/ | | | (_| |
-            |_______|\___|\__, |\___|_| |_|\__,_|
-                           __/ |
-                          |___/""")
     else:
                 print("""\nYou Lose!
              _________
@@ -159,7 +149,18 @@ def main():
     ---.__(___)         ---.__________)        ---.__(___)
         """)
     user_choice = get_user_input()
-    computer_choice = get_computer_choice()
-    result(user_choice, computer_choice)
+    if user_choice == "gun":
+        print("""
+         __                                _                  
+        |  |                              | |                 
+        |  |      ___  __ _  ___ _ __   __| |
+        |  |     / _ \/ _` |/ _ \ '_ \ / _` |
+        |  |____|  __/ (_| |  __/ | | | (_| |
+        |_______|\___|\__, |\___|_| |_|\__,_|
+                       __/ |
+                      |___/""")
+    else:
+        computer_choice = get_computer_choice()
+        result(user_choice, computer_choice)
 
 main()
