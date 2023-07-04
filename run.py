@@ -6,51 +6,55 @@ def get_user_input():
     Function to get user input and transform the input into one of the valid options
     if not valid will print an error and restart the function
     """
-    while True:
-        user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
-        if user == "r" or user == "R":
-            user = "rock"
-            rock_fig = print(""" \nYou chose: Rock
-                    _______
-                ---'   ____)
-                      (_____)
-                      (_____)
-                      (____)
-                ---.__(___)""")
-            break
-        elif user == "p" or user == "P":
-            user = "paper"
-            paper_fig = print(""" \nYou chose: Paper
-                    ________
-                ---'    ____)____
-                           ______)
-                           _______)
-                          _______)
-                ---.__________)""")
-            break
-        elif user == "s" or user == "S":
-            user = "scissors"
-            scissors_fig = print(""" \nYou chose: Scissors
-                    _______
-                ---'   ____)____
-                          ______)
-                       __________)
-                      (____)
-                ---.__(___) """)
-            break
-        elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
-            print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER!
-                    ︵  
-                    |  |
-                ---'  '________
-                       _________)
-                      (_____)
-                      (____)
-                ---.__(___)''')
-            user = "gun"
-            break
-        else:
-            print("\nERROR! Please select one of the valid options.")
+    round = 1
+    while round <= 5:
+        print(f'--------------------------------- ROUND: {round} ------------------------------------------')
+        while True:
+            user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
+            if user == "r" or user == "R":
+                user = "rock"
+                rock_fig = print(""" \nYou chose: Rock
+                        _______
+                    ---'   ____)
+                          (_____)
+                          (_____)
+                          (____)
+                    ---.__(___)""")
+                break
+            elif user == "p" or user == "P":
+                user = "paper"
+                paper_fig = print(""" \nYou chose: Paper
+                        ________
+                    ---'    ____)____
+                               ______)
+                               _______)
+                            _______)
+                    ---.__________)""")
+                break
+            elif user == "s" or user == "S":
+                user = "scissors"
+                scissors_fig = print(""" \nYou chose: Scissors
+                        _______
+                    ---'   ____)____
+                              ______)
+                           __________)
+                         (____)
+                    ---.__(___) """)
+                break
+            elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
+                print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER!
+                        ︵  
+                       |  |
+                    ---'  '________
+                           _________)
+                          (_____)
+                          (____)
+                    ---.__(___)''')
+                user = "gun"
+                break
+            else:
+                print("\nERROR! Please select one of the valid options.")
+        round = round + 1 
     return user
 
 def get_computer_choice():
