@@ -1,7 +1,6 @@
 #importing library for random methods
 import random
 
-
 def get_user_input():
     """
     Function to get user input and transform the input into one of the valid options
@@ -11,7 +10,7 @@ def get_user_input():
         user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
         if user == "r" or user == "R":
             user = "rock"
-            rock_fig = print(""" \nYou choose: Rock
+            rock_fig = print(""" \nYou chose: Rock
                   _______
               ---'   ____)
                     (_____)
@@ -21,18 +20,17 @@ def get_user_input():
             break
         elif user == "p" or user == "P":
             user = "paper"
-            paper_fig = print(""" \nYou choose: Paper
+            paper_fig = print(""" \nYou chose: Paper
                   ________
               ---'    ____)____
                          ______)
                         _______)
                        _______)
-              ---.__________)
-""")
+              ---.__________)""")
             break
         elif user == "s" or user == "S":
             user = "scissors"
-            scissors_fig = print(""" \nYou choose: Scissors
+            scissors_fig = print(""" \nYou chose: Scissors
                   _______
               ---'   ____)____
                         ______)
@@ -40,6 +38,16 @@ def get_user_input():
                     (____)
               ---.__(___) """)
             break
+        elif user == "gun" or user == "Gun" or user == "g":
+            user = "gun"
+            print("""\nYou have unlocked the Gun. You're the RPS MASTER!
+                  ︵  
+                 |  |
+              ---'  '__________
+                     __________)
+                    (_____)
+                    (____)
+              ---.__(___)""")
         else:
             print("\nERROR! Please select one of the valid options.")
     return user
@@ -79,9 +87,17 @@ def get_computer_choice():
 
 def result(user, computer):
     if user == computer:
-        print("its a tie!")
+        print("""\nIts a tie!
+                    __
+                   /  \ 
+                   \__/
+                   /  \ 
+                  /    \ 
+                  \    /
+                   \  /
+                    \/""")
     elif user == "rock" and computer == "scissors":
-        print("""\nYou win!
+        print("""\nYou Won this Round!
                   ︵  
                  |  |
               ---'  '_____
@@ -90,7 +106,7 @@ def result(user, computer):
                     (____)
               ---.__(___)""")
     elif user == "paper" and computer == "rock":
-        print("""\nYou win!
+        print("""\nYou Won this Round!
                   ︵  
                  |  |
               ---'  '_____
@@ -99,7 +115,7 @@ def result(user, computer):
                     (____)
               ---.__(___)""")
     elif user == "scissors" and computer == "paper":
-        print("""\nYou win!
+        print("""\nYou Won this Round!
                   ︵  
                  |  |
               ---'  '_____
@@ -107,6 +123,8 @@ def result(user, computer):
                     (_____)
                     (____)
               ---.__(___)""")
+    elif user == "gun":
+            print()
     else:
                 print("""\nYou Lose!
              _________
