@@ -11,42 +11,42 @@ def get_user_input():
         if user == "r" or user == "R":
             user = "rock"
             rock_fig = print(""" \nYou chose: Rock
-                  _______
-              ---'   ____)
-                    (_____)
-                    (_____)
-                    (____)
-              ---.__(___)""")
+                    _______
+                ---'   ____)
+                      (_____)
+                      (_____)
+                      (____)
+                ---.__(___)""")
             break
         elif user == "p" or user == "P":
             user = "paper"
             paper_fig = print(""" \nYou chose: Paper
-                  ________
-              ---'    ____)____
-                         ______)
-                        _______)
-                       _______)
-              ---.__________)""")
+                    ________
+                ---'    ____)____
+                           ______)
+                           _______)
+                          _______)
+                ---.__________)""")
             break
         elif user == "s" or user == "S":
             user = "scissors"
             scissors_fig = print(""" \nYou chose: Scissors
-                  _______
-              ---'   ____)____
-                        ______)
-                    __________)
-                    (____)
-              ---.__(___) """)
+                    _______
+                ---'   ____)____
+                          ______)
+                       __________)
+                      (____)
+                ---.__(___) """)
             break
         elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
             print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER!
-                  ︵  
-                 |  |
-              ---'  '________
-                     _________)
-                    (_____)
-                    (____)
-              ---.__(___)''')
+                    ︵  
+                    |  |
+                ---'  '________
+                       _________)
+                      (_____)
+                      (____)
+                ---.__(___)''')
             user = "gun"
             break
         else:
@@ -61,7 +61,7 @@ def get_computer_choice():
     computer = random.choice(options)
     if computer == "rock":
         print("""\nComputer chose: Rock
-                 ________
+                  _______
                 (____)   '---
                (_____)
                (_____)
@@ -69,18 +69,18 @@ def get_computer_choice():
                  (___)__.---""")
     elif computer == "paper":
         print("""\nComputer chose: Paper
-                 _______
-            ____(____   '---
+                  ______
+             ___(____   '---
            (______
           (_______
-          (_______
+           (_______
              (__________.---""")
     else:
         print("""\nComputer chose: Scissors
-                _______
-           ____(____   '---
-          (______
-          (__________
+                 ______
+             __(____   '---
+           (______
+          (_________
                (____)
                 (___)__.---""") 
 
