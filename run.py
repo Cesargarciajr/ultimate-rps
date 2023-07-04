@@ -38,16 +38,16 @@ def get_user_input():
                     (____)
               ---.__(___) """)
             break
-        elif user == "gun" or user == "Gun" or user == "g":
-            user = "gun"
-            print("""\nYou have unlocked the Gun. You're the RPS MASTER!
+        elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
+            print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER!
                   ︵  
                  |  |
               ---'  '________
                      _________)
                     (_____)
                     (____)
-              ---.__(___)""")
+              ---.__(___)''')
+            user = "gun"
             break
         else:
             print("\nERROR! Please select one of the valid options.")
@@ -60,7 +60,7 @@ def get_computer_choice():
     options = ("rock", "paper", "scissors")
     computer = random.choice(options)
     if computer == "rock":
-        print("""\nComputer chose: Rock!
+        print("""\nComputer chose: Rock
                  ________
                 (____)   '---
                (_____)
@@ -68,7 +68,7 @@ def get_computer_choice():
                 (____)
                  (___)__.---""")
     elif computer == "paper":
-        print("""\nComputer chose: Paper!
+        print("""\nComputer chose: Paper
                  _______
             ____(____   '---
            (______
@@ -76,7 +76,7 @@ def get_computer_choice():
           (_______
              (__________.---""")
     else:
-        print("""\nComputer chose: Scissors!
+        print("""\nComputer chose: Scissors
                 _______
            ____(____   '---
           (______
