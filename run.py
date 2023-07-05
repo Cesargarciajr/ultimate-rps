@@ -6,43 +6,40 @@ def get_user_input():
     Function to get user input and transform the input into one of the valid options
     if not valid will print an error and restart the function
     """
-    round = 1
-    while round <= 5:
-        print(f'--------------------------------- ROUND: {round} ------------------------------------------')
-        while True:
-            user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
-            if user == "r" or user == "R":
-                user = "rock"
-                rock_fig = print(""" \nYou chose: Rock
+    while True:
+        user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
+        if user == "r" or user == "R":
+            user = "rock"
+            rock_fig = print(""" \nYou chose: Rock
                         _______
                     ---'   ____)
                           (_____)
                           (_____)
                           (____)
                     ---.__(___)""")
-                break
-            elif user == "p" or user == "P":
-                user = "paper"
-                paper_fig = print(""" \nYou chose: Paper
+            break
+        elif user == "p" or user == "P":
+            user = "paper"
+            paper_fig = print(""" \nYou chose: Paper
                         ________
                     ---'    ____)____
                                ______)
                                _______)
                             _______)
                     ---.__________)""")
-                break
-            elif user == "s" or user == "S":
-                user = "scissors"
-                scissors_fig = print(""" \nYou chose: Scissors
+            break
+        elif user == "s" or user == "S":
+            user = "scissors"
+            scissors_fig = print(""" \nYou chose: Scissors
                         _______
                     ---'   ____)____
                               ______)
                            __________)
                          (____)
                     ---.__(___) """)
-                break
-            elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
-                print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER!
+            break
+        elif user == "gun" or user == "Gun" or user == "GUN" or user == "g" or user == "G":
+            print(f'''\n You have typed "{user}" and unlocked the Gun. You're the RPS MASTER! YOU WON!!!
                         ︵  
                        |  |
                     ---'  '________
@@ -50,11 +47,10 @@ def get_user_input():
                           (_____)
                           (____)
                     ---.__(___)''')
-                user = "gun"
-                break
-            else:
-                print("\nERROR! Please select one of the valid options.")
-        round = round + 1 
+            user = "gun"
+            break
+        else:
+            print("\nERROR! Please select one of the valid options.")
     return user
 
 def get_computer_choice():
@@ -138,6 +134,7 @@ def result(user, computer):
                 '  '
                 |  |
                  ︶        """)
+    return result
     
 def main():
     print("""\n                     Welcome to THE ULTIMATE RPS Game!
@@ -152,9 +149,19 @@ def main():
           (____)                _______)             (____)
     ---.__(___)         ---.__________)        ---.__(___)
         """)
-    user_choice = get_user_input()
-    if user_choice == "gun":
-        print("""
+    round = 1
+    user_score = 2
+    computer_score = 1
+    while round <=5:
+        print(f'''
+    -----------------------------------------------------------------------------
+    |                              ROUND: {round}                                      |
+    -----------------------------------------------------------------------------
+    |                        User: {user_score} X Computer: {computer_score}                               |
+    -----------------------------------------------------------------------------''')
+        user_choice = get_user_input()
+        if user_choice == "gun":
+            print("""
          __                                _                  
         |  |                              | |                 
         |  |      ___  __ _  ___ _ __   __| |
@@ -163,8 +170,10 @@ def main():
         |_______|\___|\__, |\___|_| |_|\__,_|
                        __/ |
                       |___/""")
-    else:
-        computer_choice = get_computer_choice()
-        result(user_choice, computer_choice)
+            break
+        else:
+            computer_choice = get_computer_choice()
+            result(user_choice, computer_choice)
+        round = round + 1
 
 main()
