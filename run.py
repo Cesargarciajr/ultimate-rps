@@ -121,10 +121,9 @@ def result(user, computer):
                                   (____)   '---
                                  (_____)
                                  (_____)
-                                  (____)   .---
-                                        '  '
+                                  (____).  .---
                                         |  |
-                                         ︶        """)
+                                         ︶""")
         computer_score = computer_score + 1
     elif user == "paper" and computer == "scissors":
         print(""" \n                You chose: Paper           Computer chose: Scissors
@@ -141,10 +140,9 @@ def result(user, computer):
                                   (____)   '---
                                  (_____)
                                  (_____)
-                                  (____)   .---
-                                        '  '
+                                  (____).  .---
                                         |  |
-                                         ︶        """)
+                                         ︶""")
         computer_score = computer_score + 1
     elif user == "rock" and computer == "paper":
         print(""" \n               You chose: Rock             Computer chose: Paper
@@ -159,10 +157,9 @@ def result(user, computer):
                                   (____)   '---
                                  (_____)
                                  (_____)
-                                  (____)   .---
-                                        '  '
+                                  (____).  .---
                                         |  |
-                                         ︶        """)
+                                         ︶""")
         computer_score = computer_score + 1        
     return result
     
