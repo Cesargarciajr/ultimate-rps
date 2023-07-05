@@ -147,10 +147,10 @@ def result(user, computer):
 def main():
     global user_score
     global computer_score
-    print("""\n                  Welcome to THE ULTIMATE RPS Game!
+    print("""\n                      Welcome to THE ULTIMATE RPS Game!
              \n     Challenge the computer for a 5 round game and see if you can beat it.
              \r                  Win 3 times in a row to unlock secret!")
-             \n                         Good Luck and have fun!""")
+             \n                           Good Luck and have fun!""")
     print("""
         _______             ______                 _______
     ---'   ____)        ---'  ____)____        ---'   ____)____
@@ -165,7 +165,7 @@ def main():
  ------------------------------------------------------------------------------
 |                                 ROUND: {round}                                     |
  ------------------------------------------------------------------------------
-|                               User: {user_score} | Computer: {computer_score}                          |
+|                             User: {user_score} | Computer: {computer_score}                            |
  ------------------------------------------------------------------------------''')
         user_choice = get_user_input()
         if user_choice == "gun":
