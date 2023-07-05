@@ -12,13 +12,6 @@ def get_user_input():
         user = input("\nSelect (R) for Rock, (P) for Paper or (S) for Scissors: ")
         if user == "r" or user == "R":
             user = "rock"
-            rock_fig = print(""" \nYou chose: Rock
-                        _______
-                    ---'   ____)
-                          (_____)
-                          (_____)
-                          (____)
-                    ---.__(___)""")
             break
         elif user == "p" or user == "P":
             user = "paper"
@@ -77,15 +70,6 @@ def get_computer_choice():
           (_______
            (_______
              (__________.---""")
-    else:
-        print("""\nComputer chose: Scissors
-                 ______
-             __(____   '---
-           (______
-          (_________
-               (____)
-                (___)__.---""") 
-
     return computer
 
 def result(user, computer):
@@ -102,14 +86,21 @@ def result(user, computer):
                    \  /
                     \/""")
     elif user == "rock" and computer == "scissors":
-        print("""\nYou Won this Round!
-                  ︵  
-                 |  |
-              ---'  '_____
-                    (_____)
-                    (_____)
-                    (____)
-              ---.__(___)""")
+        print(""" \n               You chose: Rock             Computer chose: Scissors
+                        _______                      ______
+                    ---'   ____)                 __(____   '---
+                          (_____)              (______
+                          (_____)             (_________
+                          (____)                   (____)
+                    ---.__(___)                     (___)__.---""")
+        print("""\n                                You Won this Round!
+                                        ︵  
+                                       |  |
+                                    ---'  '_____
+                                          (_____)
+                                          (_____)
+                                          (____)
+                                    ---.__(___)""")
         user_score = user_score + 1
     elif user == "paper" and computer == "rock":
         print("""\nYou Won this Round!
@@ -163,7 +154,7 @@ def main():
     while round <=5:
         print(f'''
  ------------------------------------------------------------------------------
-|                                 ROUND: {round}                                     |
+|                                    ROUND: {round}                                  |
  ------------------------------------------------------------------------------
 |                            User: {user_score} | Computer: {computer_score}                             |
  ------------------------------------------------------------------------------''')
