@@ -138,7 +138,8 @@ def result(user, computer):
     
 def main():
     print("""\n                     Welcome to THE ULTIMATE RPS Game!
-             \nChallenge the computer for a 5 round game and see if you can beat the Computer BEAST.
+             \nChallenge the computer for a 5 round game and see if you can beat 
+             \r\nthe Computer BEAST.
                 Win 3 times in a row to unlock secret!")
              \n                         Good Luck and have fun!""")
     print("""
