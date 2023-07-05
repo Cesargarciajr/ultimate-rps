@@ -1,5 +1,7 @@
 #importing library for random methods
 import random
+user_score = 0
+computer_score = 0
 
 def get_user_input():
     """
@@ -87,6 +89,8 @@ def get_computer_choice():
     return computer
 
 def result(user, computer):
+    global user_score
+    global computer_score
     if user == computer:
         print("""\nIts a tie!
                     __
@@ -106,6 +110,7 @@ def result(user, computer):
                     (_____)
                     (____)
               ---.__(___)""")
+        user_score = user_score + 1
     elif user == "paper" and computer == "rock":
         print("""\nYou Won this Round!
                   ︵  
@@ -115,6 +120,7 @@ def result(user, computer):
                     (_____)
                     (____)
               ---.__(___)""")
+        user_score = user_score + 1
     elif user == "scissors" and computer == "paper":
         print("""\nYou Won this Round!
                   ︵  
@@ -124,8 +130,9 @@ def result(user, computer):
                     (_____)
                     (____)
               ---.__(___)""")
+        user_score = user_score + 1
     else:
-                print("""\nYou Lose!
+        print("""\nYou Lose!
              _________
             (____)    '---
             (_____)
@@ -134,9 +141,12 @@ def result(user, computer):
                 '  '
                 |  |
                  ︶        """)
+        computer_score = computer_score + 1  
     return result
     
 def main():
+    global user_score
+    global computer_score
     print("""\n                     Welcome to THE ULTIMATE RPS Game!
              \nChallenge the computer for a 5 round game and see if you can beat it.
              \r  Win 3 times in a row to unlock secret!")
@@ -150,8 +160,6 @@ def main():
     ---.__(___)         ---.__________)        ---.__(___)
         """)
     round = 1
-    user_score = 2
-    computer_score = 1
     while round <=5:
         print(f'''
 -------------------------------------------------------------
