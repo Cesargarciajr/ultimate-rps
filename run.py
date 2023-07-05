@@ -165,6 +165,34 @@ def result(user, computer):
                                          ︶""")
         computer_score = computer_score + 1        
     return result
+
+def winner():
+    global user_score
+    global computer_score
+    if user_score > computer_score:
+        print(f'''\n                            CONGATULATIONS YOU WON THE GAME!!!
+                                    .-=========-.
+                                    \'-=======-'/
+                                    _|         |_
+        You Scored: {user_score}             ((|   .=.   |))    Computer Scored: {computer_score}
+                                    \|   /|\   |/
+                                     \__ '`' __/
+                                       _`) (´_
+                                     _/_______\_
+                                  /___________\ ''')
+        print('\nTo play again, please click on the "RUN PROGRAM" button')
+    elif user_score <= computer_score:
+        print(f'''\n 
+                                 __   __             
+                                 \ \ / /__  _   _    
+                                  \ V / _ \| | | |   
+         You Scored: {user_score}             | | (_) | |_| |   Computer Scored: {computer_score}
+                                 _ |_|\___/ \__,_|   
+                                | |    ___  ___  ___ 
+                                | |   / _ \/ __|/ _ \ 
+                                | |__| (_) \__ \  __/
+                                |_____\___/|___/\___|''')              
+        print('\nTo play again, please click on the "RUN PROGRAM" button')
     
 def main():
     """
@@ -180,7 +208,7 @@ def main():
                 _______             ______                 _______
             ---'   ____)        ---'  ____)____        ---'   ____)____
                   (_____)                ______)                 ______)
-                  (_____)                _______)            __________)
+                  (_____)                _______)             _________)
                   (____)                _______)             (____)
             ---.__(___)         ---.__________)        ---.__(___)
         """)
@@ -203,10 +231,12 @@ def main():
         |_______|\___|\__, |\___|_| |_|\__,_|
                        __/ |
                       |___/""")
+            print('\nTo play again, please click on the "RUN PROGRAM" button')
             break
         else:
             computer_choice = get_computer_choice()
             result(user_choice, computer_choice)
         round = round + 1
+    winner()
 
 main()
