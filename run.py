@@ -149,7 +149,7 @@ def main():
     global computer_score
     print("""\n                      Welcome to THE ULTIMATE RPS Game!
              \n     Challenge the computer for a 5 round game and see if you can beat it.
-             \r                  Win 3 times in a row to unlock secret!")
+             \r                    Win 3 times in a row to unlock secret!
              \n                           Good Luck and have fun!""")
     print("""
                 _______             ______                 _______
@@ -165,7 +165,7 @@ def main():
  ------------------------------------------------------------------------------
 |                                 ROUND: {round}                                     |
  ------------------------------------------------------------------------------
-|                          User: {user_score} | Computer: {computer_score}                               |
+|                            User: {user_score} | Computer: {computer_score}                             |
  ------------------------------------------------------------------------------''')
         user_choice = get_user_input()
         if user_choice == "gun":
