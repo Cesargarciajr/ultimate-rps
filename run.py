@@ -138,9 +138,8 @@ def result(user, computer):
     
 def main():
     print("""\n                     Welcome to THE ULTIMATE RPS Game!
-             \nChallenge the computer for a 5 round game and see if you can beat 
-             \r\nthe Computer BEAST.
-                Win 3 times in a row to unlock secret!")
+             \nChallenge the computer for a 5 round game and see if you can beat it.
+             \r  Win 3 times in a row to unlock secret!")
              \n                         Good Luck and have fun!""")
     print("""
         _______             ______                 _______
@@ -155,11 +154,11 @@ def main():
     computer_score = 1
     while round <=5:
         print(f'''
-    -----------------------------------------------------------------------------
-    |                              ROUND: {round}                                      |
-    -----------------------------------------------------------------------------
-    |                        User: {user_score} X Computer: {computer_score}                               |
-    -----------------------------------------------------------------------------''')
+-------------------------------------------------------------
+|                       ROUND: {round}                             |
+-------------------------------------------------------------
+|                   User: {user_score} X Computer: {computer_score}                    |
+-------------------------------------------------------------''')
         user_choice = get_user_input()
         if user_choice == "gun":
             print("""
