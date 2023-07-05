@@ -43,6 +43,9 @@ def get_computer_choice():
     return computer
 
 def result(user, computer):
+    """
+    Function to compare results and print out the outcome also counts the scores
+    """
     global user_score
     global computer_score
     if user == computer:
@@ -164,6 +167,9 @@ def result(user, computer):
     return result
     
 def main():
+    """
+    Main function control the game flow and call the functions and start the game
+    """
     global user_score
     global computer_score
     print("""\n                      Welcome to THE ULTIMATE RPS Game!
