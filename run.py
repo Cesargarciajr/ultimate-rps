@@ -174,25 +174,47 @@ def winner():
                                     .-=========-.
                                     \'-=======-'/
                                     _|         |_
-        You Scored: {user_score}             ((|   .=.   |))    Computer Scored: {computer_score}
+        You Scored: {user_score}              ((|   .=.   |))        Computer Scored: {computer_score}
                                     \|   /|\   |/
                                      \__ '`' __/
                                        _`) (´_
                                      _/_______\_
-                                  /___________\ ''')
+                                    /___________\ ''')
         print('\nTo play again, please click on the "RUN PROGRAM" button')
-    elif user_score <= computer_score:
-        print(f'''\n 
-                                 __   __             
-                                 \ \ / /__  _   _    
-                                  \ V / _ \| | | |   
-         You Scored: {user_score}             | | (_) | |_| |   Computer Scored: {computer_score}
-                                 _ |_|\___/ \__,_|   
-                                | |    ___  ___  ___ 
-                                | |   / _ \/ __|/ _ \ 
-                                | |__| (_) \__ \  __/
-                                |_____\___/|___/\___|''')              
+    elif user_score < computer_score:
+        clear
+        print(f'''\n
+ ------------------------------------------------------------------------------
+|                        You scored: {user_score} | Computer Scored: {computer_score}                    |
+ ------------------------------------------------------------------------------ 
+                         ____                      
+                        / ___| __ _ _ __ ___   ___ 
+                       | |  _ / _` | '_ ` _ \ / _ \ 
+                       | |_| | (_| | | | | | |  __/
+                        \____|\__,_|_| |_| |_|\___|
+                             ___                    
+                            / _ \__   _____ _ __    
+                           | | | \ \ / / _ \ '__|   
+                           | |_| |\ V /  __/ |      
+                            \___/  \_/ \___|_|''')              
         print('\nTo play again, please click on the "RUN PROGRAM" button')
+    else:
+        print(f'''
+ ------------------------------------------------------------------------------
+|                        You scored: {user_score} | Computer Scored: {computer_score}                    |
+ ------------------------------------------------------------------------------  
+                        ___ _                  
+                       |_ _| |_ ___       __ _ 
+                        | || __/ __|     / _` |
+                        | || |_\__ \    | (_| |
+                       |___|\__|___/     \__,_|
+                               _____ _           
+                              |_   _(_) ___      
+                                | | | |/ _ \     
+                                | | | |  __/     
+                                |_| |_|\___|     
+                         
+        ''')
     
 def main():
     """
@@ -218,7 +240,7 @@ def main():
  ------------------------------------------------------------------------------
 |                                    ROUND: {round}                                  |
  ------------------------------------------------------------------------------
-|                            User: {user_score} | Computer: {computer_score}                             |
+|                            You: {user_score} | Computer: {computer_score}                             |
  ------------------------------------------------------------------------------''')
         user_choice = get_user_input()
         if user_choice == "gun":
