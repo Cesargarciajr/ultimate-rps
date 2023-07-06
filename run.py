@@ -166,33 +166,34 @@ def result(user, computer):
         computer_score = computer_score + 1        
     return result
 
-def winner():
+def winner(rounds):
     global user_score
     global computer_score
-    if user_score > computer_score:
-        print(f'''\n
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                                    CONGATULATIONS YOU WON THE GAME!!!
-                                    .-=========-.
-                                    \'-=======-'/
-                                    _|         |_
-        You Scored: {user_score}              ((|   .=.   |))        Computer Scored: {computer_score}
-                                    \|   /|\   |/
-                                     \__ '`' __/
-                                       _`) (´_
-                                     _/_______\_
-                                    /___________\ ''')
-        print('\nTo play again, please click on the "RUN PROGRAM" button')
-    elif user_score < computer_score:
-        print(f'''\n
+    if rounds >= 5: 
+        if user_score > computer_score:
+            print(f'''\n
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                                        CONGATULATIONS YOU WON THE GAME!!!
+                                        .-=========-.
+                                        \'-=======-'/
+                                        _|         |_
+            You Scored: {user_score}              ((|   .=.   |))        Computer Scored: {computer_score}
+                                        \|   /|\   |/
+                                        \__ '`' __/
+                                        _`) (´_
+                                        _/_______\_
+                                        /___________\ ''')
+            print('\nTo play again, please click on the "RUN PROGRAM" button')
+        elif user_score < computer_score:
+            print(f'''\n
 
 
 
@@ -201,27 +202,27 @@ def winner():
 
 
 
- ------------------------------------------------------------------------------
-|                        You scored: {user_score} | Computer Scored: {computer_score}                    |
- ------------------------------------------------------------------------------ 
-                         ____                      
-                        / ___| __ _ _ __ ___   ___ 
-                       | |  _ / _` | '_ ` _ \ / _ \ 
-                       | |_| | (_| | | | | | |  __/
-                        \____|\__,_|_| |_| |_|\___|
-                             ___                    
-                            / _ \__   _____ _ __    
-                           | | | \ \ / / _ \ '__|   
-                           | |_| |\ V /  __/ |      
-                            \___/  \_/ \___|_|''')              
-        print('\nTo play again, please click on the "RUN PROGRAM" button')
-    else:
-        print(f'''
+    ------------------------------------------------------------------------------
+    |                        You scored: {user_score} | Computer Scored: {computer_score}                    |
+    ------------------------------------------------------------------------------ 
+                            ____                      
+                            / ___| __ _ _ __ ___   ___ 
+                        | |  _ / _` | '_ ` _ \ / _ \ 
+                        | |_| | (_| | | | | | |  __/
+                            \____|\__,_|_| |_| |_|\___|
+                                ___                    
+                                / _ \__   _____ _ __    
+                            | | | \ \ / / _ \ '__|   
+                            | |_| |\ V /  __/ |      
+                                \___/  \_/ \___|_|''')              
+            print('\nTo play again, please click on the "RUN PROGRAM" button')
+        else:
+            print(f'''
 
 
 
 
-        
+
  ------------------------------------------------------------------------------
 |                        You scored: {user_score} | Computer Scored: {computer_score}                    |
  ------------------------------------------------------------------------------  
@@ -264,7 +265,11 @@ def main():
 |                            You: {user_score} | Computer: {computer_score}                              |
  ------------------------------------------------------------------------------''')
         user_choice = get_user_input()
-        if user_choice == "gun":
+        if user_choice != "gun":
+            computer_choice = get_computer_choice()
+            result(user_choice, computer_choice)
+            winner(round)
+        else:
             print("""
          __                                _                  
         |  |                              | |                 
@@ -276,10 +281,6 @@ def main():
                       |___/""")
             print('\nTo play again, please click on the "RUN PROGRAM" button')
             break
-        else:
-            computer_choice = get_computer_choice()
-            result(user_choice, computer_choice)
         round = round + 1
-    winner()
 
 main()
