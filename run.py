@@ -31,7 +31,7 @@ def get_user_input():
             user = "gun"
             break
         else:
-            print("\nERROR! Please select one of the valid options.")
+            print("\nInvalid choice. Please select one of the options!")
     return user
 
 def get_computer_choice():
@@ -170,7 +170,17 @@ def winner():
     global user_score
     global computer_score
     if user_score > computer_score:
-        print(f'''\n                            CONGATULATIONS YOU WON THE GAME!!!
+        print(f'''\n
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                                    CONGATULATIONS YOU WON THE GAME!!!
                                     .-=========-.
                                     \'-=======-'/
                                     _|         |_
@@ -183,6 +193,14 @@ def winner():
         print('\nTo play again, please click on the "RUN PROGRAM" button')
     elif user_score < computer_score:
         print(f'''\n
+
+
+
+
+
+
+
+
  ------------------------------------------------------------------------------
 |                        You scored: {user_score} | Computer Scored: {computer_score}                    |
  ------------------------------------------------------------------------------ 
@@ -199,6 +217,11 @@ def winner():
         print('\nTo play again, please click on the "RUN PROGRAM" button')
     else:
         print(f'''
+
+
+
+
+        
  ------------------------------------------------------------------------------
 |                        You scored: {user_score} | Computer Scored: {computer_score}                    |
  ------------------------------------------------------------------------------  
@@ -211,9 +234,8 @@ def winner():
                               |_   _(_) ___      
                                 | | | |/ _ \     
                                 | | | |  __/     
-                                |_| |_|\___|     
-                         
-        ''')
+                                |_| |_|\___|''')
+        print('\nTo play again, please click on the "RUN PROGRAM" button')
     
 def main():
     """
