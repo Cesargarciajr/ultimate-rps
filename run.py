@@ -182,7 +182,6 @@ def winner():
                                     /___________\ ''')
         print('\nTo play again, please click on the "RUN PROGRAM" button')
     elif user_score < computer_score:
-        clear
         print(f'''\n
  ------------------------------------------------------------------------------
 |                        You scored: {user_score} | Computer Scored: {computer_score}                    |
