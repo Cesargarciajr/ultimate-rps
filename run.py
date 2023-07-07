@@ -389,10 +389,10 @@ def menu():
         elif menu_selection == "c" or menu_selection == "C":
             os.system("clear")
             print("""
-        \n                              This Game was Developed by
-        \n                                      Cesar Garcia
-        \n                                  github.com/Cesargarciajr
-        \r                          linkedin.com/in/cesar-garcia-637973aa""")
+        \n                     This Game was Developed by
+        \n                             Cesar Garcia
+        \n                       github.com/Cesargarciajr
+        \r                 linkedin.com/in/cesar-garcia-637973aa""")
             return_main()
         else:
             print("Invalid input, please try again.")
