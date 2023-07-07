@@ -235,16 +235,17 @@ def winner(rounds):
         \r                          `-=========-`()""")
             fatality = input("\nPress (F) for FATALITY: ")
             if fatality == "f" or fatality == "F":
+                os.system("clear")
                 print("""
         \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓
         \r          ▓██   ▒▒████▄   ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒▓  ██▒ ▓▒ ▒██  ██▒
         \r          ▒████ ░▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██▒▒ ▓██░ ▒░  ▒██ ██░
         \r          ░▓█▒  ░░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ░██░░ ▓██▓ ░   ░ ▐██▓░
         \r          ░▒█░    ▓█   ▓██▒ ▒██▒ ░  ▓█   ▓██▒░██████▒░██░  ▒██▒ ░   ░ ██▒▓░
-        \r           ▒ ░    ▒▒   ▓▒█░ ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░░▓    ▒ ░░      ██▒▒▒ 
-        \r           ░       ▒   ▒▒ ░   ░      ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░    ░     ▓██ ░▒░ 
-        \r           ░ ░     ░   ▒    ░        ░   ▒     ░ ░    ▒ ░  ░       ▒ ▒ ░░  
-        \r                       ░  ░              ░  ░    ░  ░ ░            ░ ░     
+        \r           ▒ ░    ▒▒   ▓▒█░ ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░░▓    ▒ ░░      ██▒▒▒
+        \r           ░       ▒   ▒▒ ░   ░      ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░    ░     ▓██ ░▒░
+        \r           ░ ░     ░   ▒    ░        ░   ▒     ░ ░    ▒ ░  ░       ▒ ▒ ░░
+        \r                       ░  ░              ░  ░    ░  ░ ░            ░ ░
                                                             ░ ░""")
             else:
                 print('Missed')
@@ -383,9 +384,9 @@ def menu():
     """
     Menu functions the will print options for the user
     """
-    os.system("clear")
     # Loop will validate input and print options to the user
     while True:
+        os.system("clear")
         print("""
         \n               ---------------------- MENU ------------------------
         \r              |                                                     |
@@ -407,14 +408,14 @@ def menu():
     \n  • Game has 5 Rounds
     \r  • Each round you can choose from Rock, Paper or Scissors options
     \r  • Once you have selected one of the options the computer will play
-    \r  • Wwill be printed at the screen if you win or lose that round or a tie
+    \r  • Will be printed at the screen if you win or lose that round or a tie
     \r  • A score counter will count the points
     \r  • After the 5th round will be displayed the Winner or Loser of the game
     \r  • Just keep in mind that:
     \r      - Rock beats Scissors
     \r      - Papers beats Rock
     \r      - Scissors beats Paper
-    \r  • You might unlock the Fatality mode if you win 3 times in a row
+    \r  • You might unlock the Fatality mode if you win 3 times put of 5
     \r  • Pay attention to the hints to unluck the MASTER RPS and become Legend
     \r  • Have Fun!""")
             return_main()
@@ -428,6 +429,7 @@ def menu():
             return_main()
         else:
             print("Invalid input, please try again.")
+            time.sleep(1.5)
             continue
 
 
@@ -439,7 +441,7 @@ def main():
     print("""
     \n                 Welcome to THE ULTIMATE RPS Game!
     \n    Challenge the computer for a 5 round game and see if you can beat it.
-    \r               Win 3 times in a row to unlock secret!
+    \r               Win 3 times put of 5 to unlock secret!
     \n                      Good Luck and have fun!""")
     print("""
     \n            ______              _____                  ______
