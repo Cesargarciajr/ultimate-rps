@@ -7,6 +7,7 @@ import os
 user_score = 0
 computer_score = 0
 
+
 def get_user_input():
     """
     Function to get user input and transform the input into one of the valid
@@ -38,7 +39,7 @@ def get_user_input():
             user = "gun"
             break
         else:
-            # If user input is invalid this message will be printed 
+            # If user input is invalid this message will be printed
             print("\nInvalid choice. Please select one of the options!")
     return user
 
@@ -76,7 +77,7 @@ def result(user, computer):
         \r                                \/''')
     elif user == "rock" and computer == "scissors":
         os.system("clear")
-        print(f''' 
+        print(f'''
         \n        Your chose: {user}               Computer chose: {computer}
         \r                _______                      ______
         \r            ---'   ____)                 __(____   '---
@@ -98,7 +99,7 @@ def result(user, computer):
         user_score = user_score + 1
     elif user == "paper" and computer == "rock":
         os.system("clear")
-        print(f''' 
+        print(f'''
         \n        Your chose: {user}               Computer chose: {computer}
         \r                ________                       _______
         \r            ---'    ____)____                (_____   '---
@@ -235,7 +236,7 @@ def winner(rounds):
     \r                                   _`) (´_
     \r                                 _/_______\_
     \r                               _/___________\_''')
-            #restart the score count
+            # Restart the score count
             user_score = 0
             computer_score = 0
             return_main()
@@ -255,7 +256,7 @@ def winner(rounds):
     \r                           | | | \ \ / / _ \ '__|
     \r                           | |_| |\ V /  __/ |
     \r                            \___/  \_/ \___|_|''')
-            #restart the score count
+            # Restart the score count
             user_score = 0
             computer_score = 0
             return_main()
@@ -275,7 +276,7 @@ def winner(rounds):
     \r                                   | | | |/ _ \ 
     \r                                   | | | |  __/
     \r                                   |_| |_|\___|''')
-            #restart the score count
+            # Restart the score count
             user_score = 0
             computer_score = 0
             return_main()
@@ -288,8 +289,8 @@ def return_main():
     # Loop will validate the user input or print invalid option
     while True:
         print("\n")
-        choice = input(
-'\nClick the "RUN PROGRAM" button to restart the program or to Main Menu, press (M): ')
+        choice =
+        input('\nClick "RUN PROGRAM" button to restart or to Main Menu, press (M): ')
         if choice == 'M' or choice == 'm':
             menu()
             break
@@ -322,11 +323,12 @@ def start_game():
     \r ---------------------------------------------------------------------
     \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
     \r ---------------------------------------------------------------------''')
-        # call the function to get user input and checks if user chose gun to break the loop
+        # Call the function to get user input and checks if user chose gun
+        # to break the loop
         user_choice = get_user_input()
         if user_choice != "gun":
-            # If gun is not selected then will call computer, results and winner functions
-            # until round is reached to 5 so the loop stops
+            # If gun is not selected then will call computer, results and
+            # winner functions until round is reached to 5 so the loop stops
             computer_choice = get_computer_choice()
             result(user_choice, computer_choice)
             winner(round)
@@ -353,26 +355,28 @@ def menu():
     os.system("clear")
     # Loop will validate input and print options to the user
     while True:
-            print("""\n               ---------------------- MENU ------------------------
-                    \r              |                                                     |
-                    \r              |    Please select one of the following, options:     |
-                    \r              |                                                     |
-                    \r              | - Press (S) to Start the Game                       |
-                    \r              | - Press (R) to see the Rules of the Game            |
-                    \r              | - Press (C) for credits                             |
-                    \r              |_____________________________________________________|""")
-            menu_selection = input("\n              Please select an option: ")
-            # Conditionals to check user input and redirect to respective menu options
-            if menu_selection == "S" or menu_selection == "s":
-                start_game()
-            elif menu_selection == "R" or menu_selection == "r":
-                os.system('clear')
-                print("""
-    \n --------------------------------- HOW TO PLAY -------------------------------------
+        print("""
+        \n               ---------------------- MENU ------------------------
+        \r              |                                                     |
+        \r              |    Please select one of the following, options:     |
+        \r              |                                                     |
+        \r              | - Press (S) to Start the Game                       |
+        \r              | - Press (R) to see the Rules of the Game            |
+        \r              | - Press (C) for credits                             |
+        \r              |_____________________________________________________|
+        """)
+        menu_selection = input("\n              Please select an option: ")
+        # Conditionals to check user input and redirect to respective options
+        if menu_selection == "S" or menu_selection == "s":
+            start_game()
+        elif menu_selection == "R" or menu_selection == "r":
+            os.system('clear')
+            print("""
+    \n --------------------------------- HOW TO PLAY --------------------------
     \n  • Game has 5 Rounds
     \r  • Each round you can choose from Rock, Paper or Scissors options
     \r  • Once you have selected one of the options the computer will play
-    \r  • Results will be printed at the screen if you win or lose that round or even a tie
+    \r  • Wwill be printed at the screen if you win or lose that round or a tie
     \r  • A score counter will count the points
     \r  • After the 5th round will be displayed the Winner or Loser of the game
     \r  • Just keep in mind that:
@@ -380,20 +384,21 @@ def menu():
     \r      - Papers beats Rock
     \r      - Scissors beats Paper
     \r  • You might unlock the Fatality mode if you win 3 times in a row
-    \r  • Pay attention to the hints to unluck the MASTER RPS and become a Legend
+    \r  • Pay attention to the hints to unluck the MASTER RPS and become Legend
     \r  • Have Fun!""")
-                return_main()
-            elif menu_selection == "c" or menu_selection == "C":
-                os.system("clear")
-                print("""
-            \n                              This Game was Developed by
-            \n                                      Cesar Garcia
-            \n                                  github.com/Cesargarciajr
-            \r                          linkedin.com/in/cesar-garcia-637973aa""")
-                return_main()
-            else:
-                print("Invalid input, please try again.")
-                continue
+            return_main()
+        elif menu_selection == "c" or menu_selection == "C":
+            os.system("clear")
+            print("""
+        \n                              This Game was Developed by
+        \n                                      Cesar Garcia
+        \n                                  github.com/Cesargarciajr
+        \r                          linkedin.com/in/cesar-garcia-637973aa""")
+            return_main()
+        else:
+            print("Invalid input, please try again.")
+            continue
+
 
 def main():
     """
@@ -420,5 +425,7 @@ def main():
     os.system("clear")
     menu()
 
+
 # Calling function to Start the Program
 main()
+
