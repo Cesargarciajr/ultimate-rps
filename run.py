@@ -103,10 +103,10 @@ def result(user, computer):
         \n        Your chose: {user}               Computer chose: {computer}
         \r                ________                       _______
         \r            ---'    ____)____                (_____   '---
-        \r                        ______)              (_____)
-        \r                        _______)             (_____)
-        \r                       _______)               (____)
-        \r            ---.__________)                    (___)__.---''')
+        \r                        ______)             (_____)
+        \r                        _______)            (_____)
+        \r                       _______)              (____)
+        \r            ---.__________)                   (___)__.---''')
         time.sleep(1.5)
         os.system("clear")
         print("""
@@ -148,7 +148,7 @@ def result(user, computer):
         \r               _______                        ______
         \r           ---'   ____)____                 (_____  '---
         \r                      ______)              (_____)
-        \r                   __________)              (_____)
+        \r                   __________)             (_____)
         \r                 (____)                     (____)
         \r           ---.__(___)                       (___)__.---''')
         time.sleep(1.5)
@@ -289,8 +289,7 @@ def return_main():
     # Loop will validate the user input or print invalid option
     while True:
         print("\n")
-        choice =
-        input('\nClick "RUN PROGRAM" button to restart or to Main Menu, press (M): ')
+        choice = input('\nClick "RUN PROGRAM" button to restart or to Main Menu, press (M): ')
         if choice == 'M' or choice == 'm':
             menu()
             break
