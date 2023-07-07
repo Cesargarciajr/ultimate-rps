@@ -15,7 +15,7 @@ def get_user_input():
     """
     # Loop will get user input validate and store in the variable
     while True:
-        user = input("\nSelect (R) Rock, (P) Paper or (S) Scissors:")
+        user = input("\nSelect (R) Rock, (P) Paper or (S) Scissors: ")
         if user == "r" or user == "R":
             user = "rock"
             break
@@ -64,128 +64,148 @@ def result(user, computer):
     # Start the contitionals to check the user input and computer choice
     if user == computer:
         os.system("clear")
-        print("""\n                                    Its a tie!
-                                        __
-                                       /  \ 
-                                       \__/
-                                       /  \ 
-                                      /    \ 
-                                      \    /
-                                       \  /
-                                        \/""")
+        print(f'''
+        \n                      You both chose the same
+        \n                            Its a tie!
+        \n                                __
+        \r                               /  \ 
+        \r                               \__/
+        \r                               /  \ 
+        \r                              /    \ 
+        \r                              \    /
+        \r                               \  /
+        \r                                \/''')
     elif user == "rock" and computer == "scissors":
         os.system("clear")
-        print(""" 
-    \n               You chose: Rock           Computer chose: Scissors
-                        _______                      ______
-                    ---'   ____)                 __(____   '---
-                          (_____)              (______
-                          (_____)             (_________
-                          (____)                   (____)
-                    ---.__(___)                     (___)__.---""")
-        print("""\n                                You Won this Round!
-                                        ︵
-                                       |  |
-                                    ---'  '_____
-                                          (_____)
-                                          (_____)
-                                          (____)
-                                    ---.__(___)""")
+        print(f''' 
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r                _______                      ______
+        \r            ---'   ____)                 __(____   '---
+        \r                  (_____)              (______
+        \r                  (_____)             (_________
+        \r                  (____)                   (____)
+        \r            ---.__(___)                     (___)__.---''')
+        time.sleep(1.5)
+        os.system("clear")
+        print("""
+        \n                       You Won this Round!
+        \r                                ︵
+        \r                               |  |
+        \r                            ---'  '_____
+        \r                                  (_____)
+        \r                                  (_____)
+        \r                                  (____)
+        \r                            ---.__(___)""")
         user_score = user_score + 1
     elif user == "paper" and computer == "rock":
         os.system("clear")
-        print(""" 
-    \n                You chose: Paper          Computer chose: Rock
-                    ________                       _______
-                ---'    ____)____                (_____   '---
-                            ______)              (_____)
-                            _______)             (_____)
-                           _______)               (____)
-                ---.__________)                    (___)__.---""")
-        print("""\n                                You Won this Round!
-                                        ︵
-                                       |  |
-                                    ---'  '_____
-                                          (_____)
-                                          (_____)
-                                          (____)
-                                    ---.__(___)""")
+        print(f''' 
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r                ________                       _______
+        \r            ---'    ____)____                (_____   '---
+        \r                        ______)              (_____)
+        \r                        _______)             (_____)
+        \r                       _______)               (____)
+        \r            ---.__________)                    (___)__.---''')
+        time.sleep(1.5)
+        os.system("clear")
+        print("""
+        \n                       You Won this Round!
+        \r                                ︵
+        \r                               |  |
+        \r                            ---'  '_____
+        \r                                  (_____)
+        \r                                  (_____)
+        \r                                  (____)
+        \r                            ---.__(___)""")
         user_score = user_score + 1
     elif user == "scissors" and computer == "paper":
         os.system("clear")
+        print(f'''
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r                _______                       ______
+        \r            ---'   ____)____             ___(____   '---
+        \r                       ______)         (______
+        \r                    __________)        (_______
+        \r                  (____)               (_______
+        \r            ---.__(___)                  (__________.---''')
+        time.sleep(1.5)
+        os.system("clear")
         print("""
-    \n                You chose: Scissors       Computer chose: Paper
-                    _______                       ______
-                ---'   ____)____             ___(____   '---
-                           ______)         (______
-                       __________)        (_______
-                      (____)               (_______
-                ---.__(___)                  (__________.---""")
-        print("""\n                                You Won this Round!
-                                        ︵
-                                       |  |
-                                    ---'  '_____
-                                          (_____)
-                                          (_____)
-                                          (____)
-                                    ---.__(___)""")
+        \n                       You Won this Round!
+        \r                                ︵
+        \r                               |  |
+        \r                            ---'  '_____
+        \r                                  (_____)
+        \r                                  (_____)
+        \r                                  (____)
+        \r                            ---.__(___)""")
         user_score = user_score + 1
     elif user == "scissors" and computer == "rock":
         os.system("clear")
+        print(f'''
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r               _______                        ______
+        \r           ---'   ____)____                 (_____  '---
+        \r                      ______)              (_____)
+        \r                   __________)              (_____)
+        \r                 (____)                     (____)
+        \r           ---.__(___)                       (___)__.---''')
+        time.sleep(1.5)
+        os.system("clear")
         print("""
-    \n               You chose: Scissors       Computer chose: Rock
-                    _______                        ______
-                ---'   ____)____                 (_____  '---
-                           ______)              (_____)
-                       __________)              (_____)
-                      (____)                     (____)
-                ---.__(___)                       (___)__.---""")
-        print("""\n                               You Lose this Round!
-                                    _______
-                                  (____)   '---
-                                 (_____)
-                                 (_____)
-                                  (____).  .---
-                                        |  |
-                                         ︶""")
+        \n                      You Lost this Round!
+        \r                            _______
+        \r                          (____)   '---
+        \r                         (_____)
+        \r                         (_____)
+        \r                          (____).  .---
+        \r                                |  |
+        \r                                 ︶""")
         computer_score = computer_score + 1
     elif user == "paper" and computer == "scissors":
         os.system("clear")
+        print(f'''
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r                ________                        ______
+        \r            ---'    ____)____              ___(____   '---
+        \r                        ______)          (________
+        \r                        _______)         (_________
+        \r                       _______)               (____)
+        \r            ---.__________)                    (___)__.---''')
+        time.sleep(1.5)
+        os.system("clear")
         print("""
-    \n               You chose: Paper          Computer chose: Scissors
-                    ________                        ______
-                ---'    ____)____              ___(____   '---
-                            ______)          (________
-                            _______)         (_________
-                           _______)               (____)
-                ---.__________)                    (___)__.---""")
-        print("""\n                               You Lose this Round!
-                                    _______
-                                  (____)   '---
-                                 (_____)
-                                 (_____)
-                                  (____).  .---
-                                        |  |
-                                         ︶""")
+        \n                      You Lost this Round!
+        \r                            _______
+        \r                          (____)   '---
+        \r                         (_____)
+        \r                         (_____)
+        \r                          (____).  .---
+        \r                                |  |
+        \r                                 ︶""")
         computer_score = computer_score + 1
     elif user == "rock" and computer == "paper":
         os.system("clear")
+        print(f'''
+        \n        Your chose: {user}               Computer chose: {computer}
+        \r                _______                      ______
+        \r            ---'   ____)                 __(____   '---
+        \r                  (_____)              (______
+        \r                  (_____)             (_______
+        \r                  (____)               (_______
+        \r            ---.__(___)                    (_______.---''')
+        time.sleep(1.5)
+        os.system("clear")
         print("""
-    \n              You chose: Rock           Computer chose: Paper
-                        _______                      ______
-                    ---'   ____)                 __(____   '---
-                          (_____)              (______
-                          (_____)             (_______
-                          (____)               (_______
-                    ---.__(___)                    (_______.---""")
-        print("""\n                               You Lose this Round!
-                                    _______
-                                  (____)   '---
-                                 (_____)
-                                 (_____)
-                                  (____).  .---
-                                        |  |
-                                         ︶""")
+        \n                      You Lost this Round!
+        \r                            _______
+        \r                          (____)   '---
+        \r                         (_____)
+        \r                         (_____)
+        \r                          (____).  .---
+        \r                                |  |
+        \r                                 ︶""")
         computer_score = computer_score + 1
     return result
 
@@ -202,54 +222,54 @@ def winner(rounds):
     if rounds >= 5:
         if user_score > computer_score:
             os.system("clear")
-            print(f'''\n
-    ---------------------------------------------------------------------------
-    |                    You scored: {user_score} | Computer Scored: {computer_score}                    |
-    ---------------------------------------------------------------------------                            
-                                CONGATULATIONS YOU WON THE GAME!!!
-                                        .-=========-.
-                                         \-=======-/
-                                        _|         |_
-            You Scored: {user_score}              ((|   .=.   |))
-            Computer Scored: {computer_score}          \|   /|\   |/
-                                         \__ '`' __/
-                                           _`) (´_
-                                         _/_______\_
-                                       _/___________\_''')
+            print(f'''
+    \n ---------------------------------------------------------------------
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r ---------------------------------------------------------------------
+    \r                       CONGATULATIONS YOU WON THE GAME!!!
+    \n                                .-=========-.
+    \r                                 \-=======-/
+    \r                                _|         |_
+    \r                               ((|   .=.   |))
+    \r                                \|   /|\   |/
+    \r                                 \__ '`' __/
+    \r                                   _`) (´_
+    \r                                 _/_______\_
+    \r                               _/___________\_''')
             return_main()
         elif user_score < computer_score:
             os.system("clear")
-            print(f'''\n
-    ---------------------------------------------------------------------------
-    |                    You scored: {user_score} | Computer Scored: {computer_score}                    |
-    ---------------------------------------------------------------------------
-                             ____
-                            / ___| __ _ _ __ ___   ___
-                           | |  _ / _` | '_ ` _ \ / _ \ 
-                           | |_| | (_| | | | | | |  __/
-                            \____|\__,_|_| |_| |_|\___|
-                                 ___
-                                / _ \__   _____ _ __
-                               | | | \ \ / / _ \ '__|
-                               | |_| |\ V /  __/ |
-                                \___/  \_/ \___|_|''')
+            print(f'''
+    \n ---------------------------------------------------------------------
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r ---------------------------------------------------------------------
+    \n                         ____
+    \r                        / ___| __ _ _ __ ___   ___
+    \r                       | |  _ / _` | '_ ` _ \ / _ \ 
+    \r                       | |_| | (_| | | | | | |  __/
+    \r                        \____|\__,_|_| |_| |_|\___|
+    \r                             ___
+    \r                            / _ \__   _____ _ __
+    \r                           | | | \ \ / / _ \ '__|
+    \r                           | |_| |\ V /  __/ |
+    \r                            \___/  \_/ \___|_|''')
             return_main()
         else:
             os.system("clear")
             print(f'''
- ------------------------------------------------------------------------------
-|                    You scored: {user_score} | Computer Scored: {computer_score}                       |
- ------------------------------------------------------------------------------
-                        ___ _
-                       |_ _| |_ ___       __ _
-                        | || __/ __|     / _` |
-                        | || |_\__ \    | (_| |
-                       |___|\__|___/     \__,_|
-                               _____ _
-                              |_   _(_) ___
-                                | | | |/ _ \ 
-                                | | | |  __/
-                                |_| |_|\___|''')
+    \n ---------------------------------------------------------------------
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r ---------------------------------------------------------------------
+    \n                            ___ _
+    \r                           |_ _| |_ ___       __ _
+    \r                            | || __/ __|     / _` |
+    \r                            | || |_\__ \    | (_| |
+    \r                            |___|\__|___/     \__,_|
+    \r                                  _____ _
+    \r                                 |_   _(_) ___
+    \r                                   | | | |/ _ \ 
+    \r                                   | | | |  __/
+    \r                                   |_| |_|\___|''')
             return_main()
 
 
@@ -279,21 +299,21 @@ def start_game():
     global computer_score
     os.system('clear')
     print("""
-                _______             ______                 _______
-            ---'   ____)        ---'  ____)____        ---'   ____)____
-                  (_____)                ______)                 ______)
-                  (_____)                _______)             _________)
-                  (____)                _______)             (____)
-            ---.__(___)         ---.__________)        ---.__(___)""")
+    \n            ______              _____                  ______
+    \r        ---'   ____)        ---'  ____)____        ---'   ____)____
+    \r              (_____)                ______)                 ______)
+    \r              (_____)                _______)             _________)
+    \r              (____)                _______)             (____)
+    \r        ---.__(___)         ---.__________)        ---.__(___)""")
     # Sets first round and start a loop that counts the rounds
     round = 1
     while round <= 5:
         print(f'''
- -----------------------------------------------------------------------
-|                               ROUND: {round}                                |
- -----------------------------------------------------------------------
-|                           You: {user_score} | Computer: {computer_score}                        |
- -----------------------------------------------------------------------''')
+    \n ---------------------------------------------------------------------
+    \r|                             ROUND: {round}                                |
+    \r ---------------------------------------------------------------------
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r ---------------------------------------------------------------------''')
         # call the function to get user input and checks if user chose gun to break the loop
         user_choice = get_user_input()
         if user_choice != "gun":
@@ -304,14 +324,14 @@ def start_game():
             winner(round)
         else:
             print("""
-         __                                _
-        |  |                              | |
-        |  |      ___  __ _  ___ _ __   __| |
-        |  |     / _ \/ _` |/ _ \ '_ \ / _` |
-        |  |____|  __/ (_| |  __/ | | | (_| |
-        |_______|\___|\__, |\___|_| |_|\__,_|
-                       __/ |
-                      |___/""")
+    \n           __                                _
+    \r          |  |                              | |
+    \r          |  |      ___  __ _  ___ _ __   __| |
+    \r          |  |     / _ \/ _` |/ _ \ '_ \ / _` |
+    \r          |  |____|  __/ (_| |  __/ | | | (_| |
+    \r          |_______|\___|\__, |\___|_| |_|\__,_|
+    \r                         __/ |
+    \r                        |___/""")
             return_main()
             break
         # Round counter
@@ -325,7 +345,7 @@ def menu():
     os.system("clear")
     # Loop will validate input and print options to the user
     while True:
-            print("""\n               --------------------- MENU --------------------------
+            print("""\n               ---------------------- MENU ------------------------
                     \r              |                                                     |
                     \r              |    Please select one of the following, options:     |
                     \r              |                                                     |
@@ -339,28 +359,29 @@ def menu():
                 start_game()
             elif menu_selection == "R" or menu_selection == "r":
                 os.system('clear')
-                print("""\n                 --------------------- HOW TO PLAY -----------------------
-            \n            • Game has 5 Rounds
-            • Each round you can choose from Rock, Paper or Scissors options
-            • Once you have selected one of the options the computer will play
-            • Results will be printed at the screen if you win or lose that round or even a tie
-            • A score counter will count the points
-            • After the 5th round will be displayed the Winner or Loser of the game
-            • Just keep in mind that:
-                - Rock beats Scissors
-                - Papers beats Rock
-                - Scissors beats Paper
-            • You might unlock the Fatality mode if you win 3 times in a row
-            • Pay attention to the hints to unluck the MASTER RPS and become a Legend
-            • Have Fun!""")
+                print("""
+    \n --------------------------------- HOW TO PLAY -------------------------------------
+    \n  • Game has 5 Rounds
+    \r  • Each round you can choose from Rock, Paper or Scissors options
+    \r  • Once you have selected one of the options the computer will play
+    \r  • Results will be printed at the screen if you win or lose that round or even a tie
+    \r  • A score counter will count the points
+    \r  • After the 5th round will be displayed the Winner or Loser of the game
+    \r  • Just keep in mind that:
+    \r      - Rock beats Scissors
+    \r      - Papers beats Rock
+    \r      - Scissors beats Paper
+    \r  • You might unlock the Fatality mode if you win 3 times in a row
+    \r  • Pay attention to the hints to unluck the MASTER RPS and become a Legend
+    \r  • Have Fun!""")
                 return_main()
             elif menu_selection == "c" or menu_selection == "C":
                 os.system("clear")
                 print("""
-            \n                    This Game was Developed by
-            \n                          Cesar Garcia
-            \n                      github.com/Cesargarciajr
-            \r              linkedin.com/in/cesar-garcia-637973aa""")
+            \n                              This Game was Developed by
+            \n                                      Cesar Garcia
+            \n                                  github.com/Cesargarciajr
+            \r                          linkedin.com/in/cesar-garcia-637973aa""")
                 return_main()
             else:
                 print("Invalid input, please try again.")
@@ -377,17 +398,17 @@ def main():
     \r               Win 3 times in a row to unlock secret!
     \n                      Good Luck and have fun!""")
     print("""
-                _______             ______                 _______
-            ---'   ____)        ---'  ____)____        ---'   ____)____
-                  (_____)                ______)                 ______)
-                  (_____)                _______)             _________)
-                  (____)                _______)             (____)
-            ---.__(___)         ---.__________)        ---.__(___)
-        """)
+    \n            ______              _____                  ______
+    \r        ---'   ____)        ---'  ____)____        ---'   ____)____
+    \r              (_____)                ______)                 ______)
+    \r              (_____)                _______)             _________)
+    \r              (____)                _______)             (____)
+    \r        ---.__(___)         ---.__________)        ---.__(___)""")
     # Gives 4.5 second fo the user to read intro message
-    print('Loading...')
+    print('\nLoading...')
     time.sleep(4.5)
     print('Completed')
+    time.sleep(1)
     os.system("clear")
     menu()
 
