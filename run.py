@@ -7,7 +7,6 @@ import os
 user_score = 0
 computer_score = 0
 
-
 def get_user_input():
     """
     Function to get user input and transform the input into one of the valid
@@ -224,7 +223,7 @@ def winner(rounds):
             os.system("clear")
             print(f'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r|                    You scored: {user_score} | Computer Scored: {computer_score}               |
     \r ---------------------------------------------------------------------
     \r                       CONGATULATIONS YOU WON THE GAME!!!
     \n                                .-=========-.
@@ -236,6 +235,9 @@ def winner(rounds):
     \r                                   _`) (´_
     \r                                 _/_______\_
     \r                               _/___________\_''')
+            #restart the score count
+            user_score = 0
+            computer_score = 0
             return_main()
         elif user_score < computer_score:
             os.system("clear")
@@ -253,6 +255,9 @@ def winner(rounds):
     \r                           | | | \ \ / / _ \ '__|
     \r                           | |_| |\ V /  __/ |
     \r                            \___/  \_/ \___|_|''')
+            #restart the score count
+            user_score = 0
+            computer_score = 0
             return_main()
         else:
             os.system("clear")
@@ -270,6 +275,9 @@ def winner(rounds):
     \r                                   | | | |/ _ \ 
     \r                                   | | | |  __/
     \r                                   |_| |_|\___|''')
+            #restart the score count
+            user_score = 0
+            computer_score = 0
             return_main()
 
 
