@@ -1,20 +1,20 @@
 
 
-<h1 align="center"><a href="https://cesargarciajr.github.io/QuizTmas/" target="_blank">QuizTimas</a></h1> 
+<h1 align="center"><a href="https://cesargarciajr.github.io/QuizTmas/" target="_blank">THE ULTIMATE RPS</a></h1> 
 
-This game was developed to challange your knowledge with fun fact about Christmas. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. Chellange your friends and have a fun Christimas!! Ho Ho Ho
+The Ultimate RPS is a fun and diferent approach for one of the most famous games of the world. Now as a backend application in a mock terminal you can have fun and chellange the computer for a 5 round game. If you in 3 times out of 5 a surprise is gonna be unlocked. Also pay attention to the hints and make a smart choice to become the RPS Legeng. Have fun!
 
-[**Link to QuizTmas**](https://cesargarciajr.github.io/QuizTmas/)
+[**Link to The Ultimate RPS**](https://the-ultimate-rps-75d98298966f.herokuapp.com/)
 
-![Alt text](assets/images/hero-readme.png "Hero image for Readme File")
+![Alt text](assets/images/Hero-img.png "Hero image for Readme File")
 
 # Contents
 
-- [Quiztimas](#quiztimas)
+- [The Ultimate RPS](#the-ultimate-rps)
 - [Contents](#contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
-    - [Wireframes](#wireframes)
+    - [FlowChart](#flowchart)
     - [Site Structure](#site-structure)
     - [Desing Choices](#design-choices)    
   - [Features](#features)
@@ -47,33 +47,27 @@ ___
   ### User Stories
 
   - #### First-Time Visitor Goals
-<br>    i.   As a First time user I want to be able to intuitively learn how to play the game without even reading the Game.
+<br>    i.   As a First time user I want to be able to intuitively learn how to play the game without even reading the Rules.
 <br>    ii.  But if needed check the Rules and see if its clear.
 <br>    iii. I might have to contact the developer for any bug or leave a message.
 <br>    iv.  Have fun!
 
   - #### Returning Visitor Goals
-<br>    i.   As returning user I want the be able to play the game straight away.
-<br>    ii.  Check if there is anyupdates to the game.
+<br>    i.   As returning user I want the be able to play the game.
+<br>    ii.  Check if there is any updates to the game.
 <br>    iii. Have fun!
 
   - #### Frequent User Goals
-<br>   i.   As frequent user I want the be able to play the game straight away.
+<br>   i.   As frequent user I want the be able to play the game.
 <br>   ii.  Check if there is anyupdates to the game.
 <br>   iii. Have fun!
 
   [Back to top](<#contents>)
   
-  - ### Wireframes
-    The wireframes for QuizTmas were produced in [**Balsamiq**](https://balsamiq.com). There are frames for a full width display and a small mobile device. The final site varies slightly from the wireframes due to developments that occured during the creation process.
+  - ### FlowChart
+    Add text here
 
     ![Alt text](assets/images/Wireframes.png "wireframes")
-
-[Back to top](<#contents>)
-
-  - ### Site Structure
-    The QuizTmas game was structured in HTML in 3 different pages: [**Play**](#play-page), [**Rules**](#rules-page) and [**Contact**](#contact-page). All the styling was developed in CSS and the logic in vanilla JavaScript. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. The effects and transitions combined with modal popup engine makes the whole experience more pleasant and a feeling of well built.
-    
 
 [Back to top](<#contents>)
 
