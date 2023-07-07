@@ -219,8 +219,40 @@ def winner(rounds):
     global user_score
     global computer_score
     # Conditional checking rounds and nested conditional to check the scores
-    if rounds >= 5:
-        if user_score > computer_score:
+    if rounds >= 5 or user_score == 3:
+        if user_score == 3:
+            os.system("clear")
+            print("""
+        \n            You WON 3 rounds!
+        \r              FINISH HIM!
+        \r               _______
+        \r              |.-----.|
+        \r              ||x . x||
+        \r              ||_.-._||
+        \r              `--)-(--`
+        \r             __[=== o]___
+        \r            |:::::::::::|\ 
+        \r            `-=========-`()""")
+            fatality = input("\nPress (F) for FATALITY: ")
+            if fatality == "f" or fatality == "F":
+                print("""
+        \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓
+        \r          ▓██   ▒▒████▄   ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒▓  ██▒ ▓▒ ▒██  ██▒
+        \r          ▒████ ░▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██▒▒ ▓██░ ▒░  ▒██ ██░
+        \r          ░▓█▒  ░░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ░██░░ ▓██▓ ░   ░ ▐██▓░
+        \r          ░▒█░    ▓█   ▓██▒ ▒██▒ ░  ▓█   ▓██▒░██████▒░██░  ▒██▒ ░   ░ ██▒▓░
+        \r           ▒ ░    ▒▒   ▓▒█░ ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░░▓    ▒ ░░      ██▒▒▒ 
+        \r           ░       ▒   ▒▒ ░   ░      ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░    ░     ▓██ ░▒░ 
+        \r           ░ ░     ░   ▒    ░        ░   ▒     ░ ░    ▒ ░  ░       ▒ ▒ ░░  
+        \r                       ░  ░              ░  ░    ░  ░ ░            ░ ░     
+                                                            ░ ░""")
+            else:
+                print('Missed')
+                # Restart the score count
+            user_score = 0
+            computer_score = 0
+            return_main()
+        elif user_score > computer_score:
             os.system("clear")
             print(f'''
     \n ---------------------------------------------------------------------
@@ -270,7 +302,7 @@ def winner(rounds):
     \r                           |_ _| |_ ___       __ _
     \r                            | || __/ __|     / _` |
     \r                            | || |_\__ \    | (_| |
-    \r                            |___|\__|___/     \__,_|
+    \r                           |___|\__|___/     \__,_|
     \r                                  _____ _
     \r                                 |_   _(_) ___
     \r                                   | | | |/ _ \ 
