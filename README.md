@@ -18,14 +18,14 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
     - [Site Structure](#site-structure)
     - [Desing Choices](#design-choices)
   - [Features](#features)
-    - [Play Page](#play-page)
-    - [Modal PopUp](#modal-popup)
-    - [Answer Buttons](#answer-buttons)
-    - [TimesUp Alert](#timesup-alert)
-    - [TimesUp Alert](#timesup-alert)
-    - [Hidden Cards](#hidden-cards)
+    - [Landing Play Page](#landing-play-page)
+    - [Welcome Message](#welcome-message)
+    - [Main Menu](#main-menu)
+    - [Rules](#rules-menu-option)
+    - [Credits](#credits-menu-option)
+    - [Start Game](#start-game-menu-option)
     - [Game Over Message](#game-over-message)
-    - [Rules Page](#rules-page)
+    - [Selected Valid Option](#selected-valid-option)
     - [Contact Page](#contact-page)
     - [Future Features](#future-features)
   - [Testing](#testing)
@@ -72,71 +72,77 @@ ___
 [Back to top](<#contents>)
 
   - ### Design Choices
-      The idea was to build a terminal based application with smooth transitions to make the UX even more seamless and intuitive. I added few diagrams to make the game more user friendly and make look better as you can see the images below:
-
-    ![Alt text](assets/images/rps-flowchart.png "wireframes")
-    ![Alt text](assets/images/rps-flowchart.png "wireframes")
-    ![Alt text](assets/images/rps-flowchart.png "wireframes")
-    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+      The idea was to build a terminal based application with smooth transitions to make the UX even more seamless and intuitive. I added few diagrams to make the game more user friendly and make look better as you can see the [Features](#features) section.
 
 
 [Back to top](<#contents>)
 
 ## Features
 
-  ### Play Page
-The Play Page is also the landing page, where the user can easily learn and understand the website. It consists with a TOP Link over the "QuizTmas" title, a navegation bar that directs to the differents pages and the Play Area. Where the user car see 25 different cards also a Tally area, where all the right answers, wrong answers and number of questions already answered. Can game is very intuitive smooth to play. All the style choices where made based on Christmas theme, to make it more fun, enjoyable and exciting.
+  ### Landing Play Page
+As part of the game a landing area presents the Rock, Paper, Scissors and Gun as hints of how to "unlock" the Legend by selecting the gun to win over all options:
 
-  ![Alt text](./assets/images/play-page.png "Play Page") 
+  ![Alt text](./assets/images/Hero-img.png "Landing Play Page") 
 
 [Back to top](<#contents>)
 
-  ### Modal PopUp
-Once you click in on of th cards a moldal popup pops and display a random question from a pool of 50 different fun facts questions about Christmas. The modal pop up design is user friendly and easy to understand how to play. A timer starts to countdown from 15 seconds for the user to pick one of the questions.
+  ### Welcome Message
+Welcome message gives the user a clear idea of the game and a 4.5 second to see this message while game is loading is a user friendly interaction.
 
-  ![Alt text](./assets/images/modal-popup.png "Modal Popup") 
+  ![Alt text](./assets/images/welcome-message.png "Welcome Message") 
   
 [Back to top](<#contents>)
         
-  ### Answer Buttons
-The answers buttons display 4 buttons. Three of them are wrong answers and only one is right. If the right answered is picked it will turn the button into a green color. If the wrong answers is picked, is will turn the button into a red color and display the right answer in green color as the countdown timer stops and a next button is displayed to close the modal popup and allow the user to go back to the play area and pick another card.
+  ### Main Menu
+The main menu gives the user clear options to select and navigate through it.
 
-  ![Alt text](./assets/images/answer-buttons.png "Answer Buttons") 
+  ![Alt text](./assets/images/main-menu.png "Main Menu") 
 
 [Back to top](<#contents>)
 
-  ### TimesUp Alert
-If the user does not manage to pick a answer in time. a alert is displayed with a "TimesUp!" message. And a wrong answers will be incremented.
+  ### Rules Menu Option
+Rules are clear and easy to understand making user experience more effective regarding to know how to play the game and use the system.
 
-  ![Alt text](./assets/images/alert-timesup.png "Alert Times Up") 
+  ![Alt text](./assets/images/rules.png "Rules") 
  
 [Back to top](<#contents>)
 
-  ### Hidden Cards
-Every time the user picks a card. The card will desapear so the user knows the ones already picked and the ones left in a very interactive proposal.
+  ### Credits Menu Option
+Credits option gives the user to contact the developer in case o bugs or issues found, or to get in touch for futures projects
 
-  ![Alt text](./assets/images/hidden-cards.png "Hidden Cards") 
+  ![Alt text](./assets/images/credits.png "Credits") 
  
 [Back to top](<#contents>)
 
-  ### Game Over Message
-Once the user picked 10 cards a Game Over message will display and show the amount of correct answers wrong answers. Also a restart button the will reload the page and restart the game. 
+  ### Start Game Menu Option
+Once the user start the game it prints to the console a Rock, Paper, Scissors diagram to show user the options also prints the Round counter and a score section to keep track the progress of the game. Finally asks the user to input the option as the user can type "r" "R" "rock" respectivly to the options available. If not a "Invalid option will be printed"
 
-  ![Alt text](./assets/images/game-over-message.png "Game Over Message") 
+  ![Alt text](./assets/images/game-play.png "Game play") 
  
 [Back to top](<#contents>)
 
-  ### Rules Page
-It's a simple page where all the rules are explained to the user, easy, clear and simple to understand.
+  ### Selected Valid Option
+Once a valid option is selected it will show what was selected and generated randomly by the computer
 
-  ![Alt text](./assets/images/rules-page.png "Rules Page") 
+  ![Alt text](./assets/images/showing-choices.png "Show Choices") 
  
 [Back to top](<#contents>)
 
-  ### Contact Page
-Contact page the user can reach the developer in any of the three links provided that will open in a different tab for better UX.
+  ### Comparing Computer vs User choices
+The system will compare the computer and the user choice and print an outcome for that round. Also increasing the round and the score if win or lose round
 
-  ![Alt text](./assets/images/contact-page.png "Contact Page") 
+  ![Alt text](./assets/images/win-round.png "Win Round")
+  
+  ![Alt text](./assets/images/lost-round.png "Lose Round")
+ 
+[Back to top](<#contents>)
+
+  ### Comparing Computer vs User choices
+The system will compare the computer and the user choice and print an outcome for that round. Also increasing the round and the score if win or lose round
+
+  ![Alt text](./assets/images/win-round.png "Win Round")
+  
+  ![Alt text](./assets/images/lost-round.png "Lose Round")
  
 [Back to top](<#contents>)
 
