@@ -65,27 +65,14 @@ ___
   [Back to top](<#contents>)
   
   - ### FlowChart
-    Add text here
+    The flowchart was a very useful tool to plan ahead and understand how to build the application below you can see the chart that was made using the [**Lucid**](https://lucid.co/)
 
-    ![Alt text](assets/images/Wireframes.png "wireframes")
+    ![Alt text](assets/images/rps-flowchart.png "wireframes")
 
 [Back to top](<#contents>)
 
   - ### Design Choices
       The idea of the design of the game was to blend a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones, full of animatinos in 3D and smooth transitions to make the UX even more seamless and intuitive.
-
-    - #### Typography
-        - Mountains of Christmas font from [**Google Fonts**](https://fonts.google.com/)
-
-        ![Alt text](./assets/images/mountains-of-christmas-font.png "Mountains of Christmas Font")
-
-        - Wix Madefor Display font from [**Google Fonts**](https://fonts.google.com/)
-
-        ![Alt text](./assets/images/wix-madefor-display-font.png "Wix Madefor Display Font")
-
-    - #### Color Scheme
-
-  ![Alt text](./assets/images/ColorPallete.png "colour pallete")
 
 [Back to top](<#contents>)
 
@@ -242,36 +229,16 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
 ## Credits
 
   ### Content  
-  - [**Code Institute**](https://codeinstitute.net/)  - JavaScript Module and Tutor Support.
+  - [**Code Institute**](https://codeinstitute.net/)  - Python Module and Tutor Support.
   - [**GitHub**](https://github.com/) - for deployment and host.
-  - [**GitPod**](https://gitpod.io/) - for IDE and editor of the code.
+  - [**Code Anywhere**](https://app.codeanywhere.com/) - for IDE and editor of the code.
   - [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) - Mentor helping with insights and coding fix.
-  - [**CSS Tricks**](https://css-tricks.com/) - learn how to style better in CSS.
-  - [**Jot Form**](https://www.jotform.com/) - learn how to create and style forms in html.
-  - [**HubSpot**](https://blog.hubspot.com/website/how-to-embed-google-map-in-html) - learn how to use Google Maps API.
   - [**W3 Schools**](https://www.w3schools.com/) - used for multiples researches and tutorials in HTML and CSS.
-  - [**Color Hunt**](https://colorhunt.co/) - used to select colors of the project.
-  - [**Mmdn Web Docs**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) - learned how to remove html elements using DOM.
-  - [**Favicon Generator**](https://realfavicongenerator.net/) - used to generate a favIcon.
-  - [**Chat GPT**](https://chat.openai.com/) - used to generate the pool of 50 themed questions and answers.
-  - [**FreeCodeCamp**](https://www.youtube.com/@freecodecamp) - Watched tutorials how to make flip card effect.
-  - [**Easy Tutorials**](https://www.youtube.com/@EasyTutorialsVideo) - Watched tutorials how to make buttons for quiz answers.
-  - [**Web Dev Simplified**](https://www.youtube.com/@WebDevSimplified) - Watched tutorials how to make modal popup.
-  - [**The WebShala**](https://www.youtube.com/@TheWebShala) - Watched tutotirals how to make questions shows randomly.
-
+  
 [Back to top](<#contents>)
 
   ### Media
-- [**Pexel**](https://www.pexels.com/) - for images and photos.
-- [**iStock**](https://www.istockphoto.com/) - for images and photos.
-- [**TinyPNG**](https://tinypng.com/) - resizing images.
-- [**Adobe Color**](https://color.adobe.com/pt/create/color-contrast-analyzer) - used to check contrast between the colors picked for project.
-- [**Colors CO**](https://coolors.co/) was used to create a colour pallete for this readme file.
-- [**Balsamiq**](https://balsamiq.com/wireframes/) - used for wireframes.
-- [**Font Awesome**](https://fontawesome.com/) - used for icons.
-- [**Google fonts**](https://fonts.google.com/) - for fonts used in this project.
-- [**Am I Resposive**](https://ui.dev/amiresponsive/) - for the  Hero image in the ReadMe file.
-- [**ConvertIO**](https://convertio.co/) - used to convert all the photos to webp format file.
+- [**Lucid**](https://lucid.co/) - Flowchart used on readme file.
 
 [Back to top](<#contents>)
 
