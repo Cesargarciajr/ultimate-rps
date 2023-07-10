@@ -222,7 +222,7 @@ I used the following technologies, platforms and support in building my project:
 
 <details>
 <summary>GitHub Deployment</summary>
-First of all you need to have a <p><bold><link rel="GitHub" href="https://github.com/Cesargarciajr/bloom-of-life) account, I choose [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life"></bold></p> because it's free and easy to create a repository to host your code and share with others.
+First of all you need to have a GitHub account and I choose it because it's free and easy to create a repository to host your code and share with others.
 
 - To create a repository you just need to go to the main page at the top right you will see a "+" button just click here and then new repository
 
