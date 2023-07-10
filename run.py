@@ -64,14 +64,14 @@ def result(user, computer):
     # Start the contitionals to check the user input and computer choice
     if user == computer:
         os.system("clear")
-        print(f'''
+        print(fr'''
         \n                      You both chose the same
         \n                            Its a tie!
         \n                                __
-        \r                               /  \ 
+        \r                               /  \
         \r                               \__/
-        \r                               /  \ 
-        \r                              /    \ 
+        \r                               /  \
+        \r                              /    \
         \r                              \    /
         \r                               \  /
         \r                                \/''')
@@ -222,7 +222,7 @@ def winner(rounds):
     if rounds >= 5 or user_score == 3:
         if user_score == 3:
             os.system("clear")
-            print("""
+            print(r"""
         \n                    You WON 3 rounds!
         \r                       FINISH HIM!
         \r                             _______
@@ -231,13 +231,13 @@ def winner(rounds):
         \r         /#(-'              ||_.-._||
         \r         `-'                `--)-(--`
         \r                           __[=== o]___
-        \r                          |:::::::::::|\ 
-        \r                          `-=========-`()""")
+        \r                          |:::::::::::|\
+        \r                          `-=========-`()""")  # noqa
             fatality = input("\nPress (F) for FATALITY: ")
             if fatality == "f" or fatality == "F":
                 os.system("clear")
                 print("""
-        \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓  # noqa
+        \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓
         \r          ▓██   ▒▒████▄   ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒▓  ██▒ ▓▒ ▒██  ██▒
         \r          ▒████ ░▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██▒▒ ▓██░ ▒░  ▒██ ██░
         \r          ░▓█▒  ░░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ░██░░ ▓██▓ ░   ░ ▐██▓░
@@ -246,7 +246,7 @@ def winner(rounds):
         \r           ░       ▒   ▒▒ ░   ░      ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░    ░     ▓██ ░▒░
         \r           ░ ░     ░   ▒    ░        ░   ▒     ░ ░    ▒ ░  ░       ▒ ▒ ░░
         \r                       ░  ░              ░  ░    ░  ░ ░            ░ ░
-                                                            ░ ░""")
+                                                            ░ ░""")  # noqa
             else:
                 print('Missed')
                 # Restart the score count
@@ -255,9 +255,9 @@ def winner(rounds):
             return_main()
         elif user_score > computer_score:
             os.system("clear")
-            print(f'''
+            print(fr'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored: {computer_score}               | # noqa
+    \r|                    You scored: {user_score} | Computer Scored: {computer_score}               |
     \r ---------------------------------------------------------------------
     \r                       CONGATULATIONS YOU WON THE GAME!!!
     \n                                .-=========-.
@@ -268,36 +268,36 @@ def winner(rounds):
     \r                                 \__ '`' __/
     \r                                   _`) (´_
     \r                                 _/_______\_
-    \r                               _/___________\_''')
+    \r                               _/___________\_''')  # noqa
             # Restart the score count
             user_score = 0
             computer_score = 0
             return_main()
         elif user_score < computer_score:
             os.system("clear")
-            print(f'''
+            print(fr'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                | # noqa
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
     \r ---------------------------------------------------------------------
     \n                         ____
     \r                        / ___| __ _ _ __ ___   ___
-    \r                       | |  _ / _` | '_ ` _ \ / _ \ 
+    \r                       | |  _ / _` | '_ ` _ \ / _ \
     \r                       | |_| | (_| | | | | | |  __/
     \r                        \____|\__,_|_| |_| |_|\___|
     \r                             ___
     \r                            / _ \__   _____ _ __
     \r                           | | | \ \ / / _ \ '__|
     \r                           | |_| |\ V /  __/ |
-    \r                            \___/  \_/ \___|_|''')
+    \r                            \___/  \_/ \___|_|''')  # noqa
             # Restart the score count
             user_score = 0
             computer_score = 0
             return_main()
         else:
             os.system("clear")
-            print(f'''
+            print(fr'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                | # noqa
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
     \r ---------------------------------------------------------------------
     \n                            ___ _
     \r                           |_ _| |_ ___       __ _
@@ -308,7 +308,7 @@ def winner(rounds):
     \r                                 |_   _(_) ___
     \r                                   | | | |/ _ \ 
     \r                                   | | | |  __/
-    \r                                   |_| |_|\___|''')
+    \r                                   |_| |_|\___|''')  # noqa
             # Restart the score count
             user_score = 0
             computer_score = 0
@@ -351,9 +351,9 @@ def start_game():
     while round <= 5:
         print(f'''
     \n ---------------------------------------------------------------------
-    \r|                             ROUND: {round}                                | # noqa
+    \r|                             ROUND: {round}                                |
     \r ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |# noqa
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
     \r ---------------------------------------------------------------------''')  # noqa
         # Call the function to get user input and checks if user chose gun
         # to break the loop
@@ -365,7 +365,7 @@ def start_game():
             result(user_choice, computer_choice)
             winner(round)
         else:
-            print("""
+            print(r"""
     \n           __                                _
     \r          |  |                              | |
     \r          |  |      ___  __ _  ___ _ __   __| |
@@ -373,7 +373,7 @@ def start_game():
     \r          |  |____|  __/ (_| |  __/ | | | (_| |
     \r          |_______|\___|\__, |\___|_| |_|\__,_|
     \r                         __/ |
-    \r                        |___/""")
+    \r                        |___/""")  # noqa
             return_main()
             break
         # Round counter

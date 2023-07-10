@@ -16,7 +16,7 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
     - [User Stories](#user-stories)
     - [FlowChart](#flowchart)
     - [Site Structure](#site-structure)
-    - [Desing Choices](#design-choices)    
+    - [Desing Choices](#design-choices)
   - [Features](#features)
     - [Play Page](#play-page)
     - [Modal PopUp](#modal-popup)
@@ -67,12 +67,18 @@ ___
   - ### FlowChart
     The flowchart was a very useful tool to plan ahead and understand how to build the application below you can see the chart that was made using the [**Lucid**](https://lucid.co/)
 
-    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+    ![Alt text](assets/images/rps-flowchart.png "flowchart")
 
 [Back to top](<#contents>)
 
   - ### Design Choices
-      The idea of the design of the game was to blend a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones, full of animatinos in 3D and smooth transitions to make the UX even more seamless and intuitive.
+      The idea was to build a terminal based application with smooth transitions to make the UX even more seamless and intuitive. I added few diagrams to make the game more user friendly and make look better as you can see the images below:
+
+    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+    ![Alt text](assets/images/rps-flowchart.png "wireframes")
+
 
 [Back to top](<#contents>)
 
