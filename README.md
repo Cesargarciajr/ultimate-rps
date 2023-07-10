@@ -32,10 +32,10 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
     - [Hidden Features](#hidden-features)
     - [Future Features](#future-features)
   - [Testing](#testing)
-    - [Testing Process](#testing-process)
     - [Bugs and Issues](#bugs-and-issues)
   - [Technologies Used](#technologies-used)
-  - [Deployment](#deployment)
+  - [Deployment](#deployment) 
+    - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -179,7 +179,7 @@ If the user wins 3 out of 5 rounds the user will be asked to "finish" the comput
 [Back to top](<#contents>)
 
   ### Future Features
-For feature features I think would be nice to make a colourful game for better user experience also implement if the user wins 3 times in a row he could activate the "nuclear bomb" and win the game. Those hidden features could make a difference and keep the users interested to play more and discover and unlock them.
+For feature features I think would be nice to make a colourful game for better user experience also implement if the user wins 3 times in a row he could activate the "nuclear bomb" and win the game. Those hidden features could make a difference and keep the users interested to play more and discover and unlock them. Also by adding a "raking" where user the input name and challange friends and keep record how many times user beated the computer.
 
 
 [Back to top](<#contents>)
@@ -219,6 +219,8 @@ I used the following technologies, platforms and support in building my project:
 
 ## Deployment
 
+<details>
+<summary>GitHub Deployment</summary>
 First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) account, I choose [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) because it's free and easy to create a repository to host your code and share with others.
 
 - To create a repository you just need to go to the main page at the top right you will see a "+" button just click here and then new repository
@@ -230,6 +232,46 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
 - Select the Branch as main and then save it.
 
 - Finally, your repository is deployed and it should show you a link so you can share it with others.
+</details>
+
+<details>
+<summary>Cloning the Repo</summary>
+
+1. Click on the "Code" button near the top right corner of the page.
+2. Copy the HTTPS or SSH URL that appears in the box.
+Open your terminal (or Git Bash on Windows) and navigate to the directory where you want to clone the repository.
+3. Type "git clone" followed by a space, and then paste the URL you copied in step 3.
+4. Press enter to run the command. This will clone the repository onto your local machine.
+5. You should now have a local copy of the GitHub repository on your machine.
+
+</details>
+
+<details>
+<summary>Forking the Repo</summary>
+
+1. Click the "Fork" button near the top right corner of the page. This will create a copy of the repository in your own GitHub account.
+2. Once the fork is complete, you will be redirected to the forked repository in your account.
+3. If you haven't already, clone the forked repository to your local machine using the steps outlined in the previous answer.
+4. Make any changes or additions you want to the code in your local copy of the repository.
+5. Commit your changes to your local repository using the "git commit" command.
+6. Push your changes to the forked repository on GitHub using the "git push" command.
+7. If you want to contribute your changes back to the original repository, create a pull request by going to the original repository's page and clicking the "New pull request" button. From there, you can compare your changes to the original repository and request that they be merged.
+8. You should now have a forked copy of the GitHub repository in your account, and you can make changes to it and contribute back to the original repository if desired.
+
+</details>
+
+   ### Heroku Deployment
+First of all you need to have a [**Heroku**](https://www.heroku.com/platform) account.
+2. From the Dashboard, click "New" - "Create new app".
+3. Enter a name for the app. Click "Create App".
+4. Connect your GitHub account and select the repository and branch to deploy.
+5. When you create the app, you will need to add two buildpacks from the Settings tab. The ordering is as follows:
+    - heroku/python
+    - heroku/nodejs
+6. You must then create a Config Var called PORT. Set this to 8000.
+
+First of all you need to have a [**Heroku**](https://www.heroku.com/platform) account.
+
 
 [Back to top](<#contents>)
 
@@ -237,21 +279,31 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
 
   ### Content  
   - [**Code Institute**](https://codeinstitute.net/)  - Python Module and Tutor Support.
+  - [**Code Institute Python Template**](https://github.com/Code-Institute-Org/python-essentials-template)
   - [**GitHub**](https://github.com/) - for deployment and host.
   - [**Code Anywhere**](https://app.codeanywhere.com/) - for IDE and editor of the code.
   - [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) - Mentor helping with insights and coding fix.
+  - [**Tiago Fortaleza Gai**](https://www.linkedin.com/in/tiago-fortaleza-gai/) - Helped throughout the project developing troubleshooting and debugging. 
   - [**W3 Schools**](https://www.w3schools.com/) - used for multiples researches and tutorials in HTML and CSS.
-  
+  - [**Stack Overflow**](https://stackoverflow.com/questions/45346575/what-does-noqa-mean-in-python-comments) - solutions for the diagrams issue mentioned in the [Bugs and Issues](#bugs-and-issues) of this file
+  - [**PEP8 ORG**](https://pep8.org/#maximum-line-length) - solution for the flags regarding the diagrams in the PEP8 Validator mentioned in the [Bugs and Issues](#bugs-and-issues) of this file.
+  - [**Real Python**](https://realpython.com/python-pep8/#maximum-line-length-and-line-breaking) - Also provide with clarity the solution mentinoed in the [Bugs and Issues](#bugs-and-issues) of this file.
+
+ 
 [Back to top](<#contents>)
 
   ### Media
 - [**Lucid**](https://lucid.co/) - Flowchart used on readme file.
+- [**Pinterest**](https://www.pinterest.ie/pin/494340496574099065/) - Background image for the page.
+- [**Patorjk**](https://patorjk.com/software/taag/#p=display&f=Bloody&t=FATALITY) - provider with different fonts in diagrams terminal based.
+- [**ASCII Art**](https://www.asciiart.eu/weapons/guns) - provided gun ASCII art.
+
 
 [Back to top](<#contents>)
 
 ## Acknowledgments
 
-This project definetly challenge my skills, I've learned so much throughout the process and can say I have a feeling of acomplishment from what I knew when I started this project and from what I know now. It definitly helped better understand concepts in coding also expand my knowledge in JavaScript. It was fun and enjoyable to built this game, I wan to thanks my mentor [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support, help and guidance during the project.
+This project was fun and challanging at the same time. I learned so much while developing and trying to enhance a simple and old game was the biggest creative challange. My mentor [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) was fundamental to guide me and take the right approaches to the project, I can not forget to say a huge thanks to [**Tiago Fortaleza Gai**](https://www.linkedin.com/in/tiago-fortaleza-gai/) that helped me a lot with programming logics and helped me to debbug the code when I was stucked. I loved the final version of the game and I can say I'm proud of the final version and excited to keep updating and adding future features.
 
 by [**Cesar Garcia**](https://github.com/Cesargarciajr)
 
