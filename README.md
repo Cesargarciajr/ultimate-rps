@@ -271,16 +271,13 @@ First of all you need to have a [**Heroku**](https://www.heroku.com/platform) ac
     - heroku/nodejs
 6. You must then create a Config Var called PORT. Set this to 8000.
 
-First of all you need to have a [**Heroku**](https://www.heroku.com/platform) account.
-
-
 [Back to top](<#contents>)
 
 ## Credits
 
   ### Content  
   - [**Code Institute**](https://codeinstitute.net/)  - Python Module and Tutor Support.
-  - [**Code Institute Python Template**](https://github.com/Code-Institute-Org/python-essentials-template)
+  - [**Code Institute Python Template**](https://github.com/Code-Institute-Org/python-essentials-template) - Template for Python mock terminal in Heroku.
   - [**GitHub**](https://github.com/) - for deployment and host.
   - [**Code Anywhere**](https://app.codeanywhere.com/) - for IDE and editor of the code.
   - [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) - Mentor helping with insights and coding fix.
