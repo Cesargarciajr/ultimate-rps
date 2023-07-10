@@ -261,8 +261,10 @@ Open your terminal (or Git Bash on Windows) and navigate to the directory where 
 
 </details>
 
-   ### Heroku Deployment
-First of all you need to have a [**Heroku**](https://www.heroku.com/platform) account.
+<details> 
+<summary>Heroku Deployment</summary>
+
+First of all you need to have a Heroku account.
 2. From the Dashboard, click "New" - "Create new app".
 3. Enter a name for the app. Click "Create App".
 4. Connect your GitHub account and select the repository and branch to deploy.
@@ -270,6 +272,8 @@ First of all you need to have a [**Heroku**](https://www.heroku.com/platform) ac
     - heroku/python
     - heroku/nodejs
 6. You must then create a Config Var called PORT. Set this to 8000.
+
+</details>
 
 [Back to top](<#contents>)
 
