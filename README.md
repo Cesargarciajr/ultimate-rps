@@ -26,7 +26,10 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
     - [Start Game](#start-game-menu-option)
     - [Game Over Message](#game-over-message)
     - [Selected Valid Option](#selected-valid-option)
-    - [Contact Page](#contact-page)
+    - [Comparing Computer vs User choices](#comparing-computer-vs-user-choices)
+    - [Tied Round](#tied-round)
+    - [Game Over](#game-over)
+    - [Hidden Features](#hidden-features)
     - [Future Features](#future-features)
   - [Testing](#testing)
     - [Testing Process](#testing-process)
@@ -137,73 +140,66 @@ The system will compare the computer and the user choice and print an outcome fo
  
 [Back to top](<#contents>)
 
-  ### Comparing Computer vs User choices
-The system will compare the computer and the user choice and print an outcome for that round. Also increasing the round and the score if win or lose round
+  ### Tied Round
+In case the round is Tied a message will be showed and no score will be increased
 
-  ![Alt text](./assets/images/win-round.png "Win Round")
-  
-  ![Alt text](./assets/images/lost-round.png "Lose Round")
+  ![Alt text](./assets/images/tie-round.png "Tied Roun")
+
+[Back to top](<#contents>)
+
+  ### Game Over
+After 5 rounds system will compare the scores and print a final message:
+
+If user wins:
+
+  ![Alt text](./assets/images/final-win.png "User Wins")
+
+If user lose:
+
+  ![Alt text](./assets/images/game-over.png "Game Over")
+
+If its a tie:
+
+  ![Alt text](./assets/images/final-tie.png "Final Tie")
+
  
 [Back to top](<#contents>)
 
+  ### Hidden Features
+The user can see the hints and "unlock" the hidden features. If user selects the "Gun" he will automatically will the game and a "Legend" message will be printed:
+
+  ![Alt text](./assets/images/gun.png "Gun")
+
+If the user wins 3 out of 5 rounds the user will be asked to "finish" the computer the "Fatality" will be printed:
+
+  ![Alt text](./assets/images/finish-him.png "Finish Him")
+
+  ![Alt text](./assets/images/fatality.png "Fatality")
+
+[Back to top](<#contents>)
 
   ### Future Features
-We want to implement 2 different surprise cards. So everytime the user picks a card he can either pick a Santa Claus picture, a Grinch picture or a question.
-If the user picks a Santa Claus it will give him a 2 points Bonus. If the user picks a Grinch card it will lose 3 points, and if the user picks a question he has a chance either to win one point by picking the right answer or lose a point. 
+For feature features I think would be nice to make a colourful game for better user experience also implement if the user wins 3 times in a row he could activate the "nuclear bomb" and win the game. Those hidden features could make a difference and keep the users interested to play more and discover and unlock them.
 
 
 [Back to top](<#contents>)
 
 ## Testing
 
-The game was tested in differents 
+The game was tested and validate with PEP8CI with no errors. However the diagrams apresented a few flags and the solution is in the [Bugs and Issues](#bugs-and-issues) section of this file.
 
-- Tested in differents mobile devices and web browsers
-- Tested using the [**CCS validador**](https://www.w3.org/)
-- Tested using the [**HTML validator**](https://validator.w3.org/nu/)
-- Tested using the [**JsHint Validator**](https://jshint.com/)
-- Tested using the Lighthouse dev tool from Google Chrome
-
-You can see the reports below as mentioned before:
-
-Css validator report
-
-![Alt text](assets/images/css-validator.png "CSS report")
-
-HTML checker report
-
-![Alt text](assets/images/Html-checker.png "HTML report")
-
-Jshint report
-
-![Alt text](assets/images/JsHint.png "JsHint report")
-
-Lighthouse dev tool from Google Chrome Report
-
-![Alt text](assets/images/lighthouse-testing.png "Chrome LightHouse report")
-
-### Testing Process
-
-  | Test                | Action                   | Success Criteria  |
-  | -------------       |-------------             | -----|
-  | Landingpage loads      | Navigate to website URL  | Page loads < 5s, no errors |
-  | Links            | Click on each Navigation link  | Correct section is redirected action performed |
-  | Gameplay  | Click the cards, answers buttons and counting the right, wrong and number of questions | The game is working as it should with no errors and malfunction |
-  | Responsiveness | Resize the viewport window from 320px upwards with Chrome Dev Tools. Use Responsive Design Checker to test various mobile, tablet, and large screen sizes | Page layout remains intact and adapts to screen size|
-  | Different web browsers | Runned the game in Google Chrome, Mozilla Firefox and Internet Explorer | Game works responsive and layout remains intact no errors or bug detected |
-  | Different screen devices | Runned the game using a Samsung Galaxy s20 and Iphone 13 | Game works responsive and layout remains intact no errors or bug detected |
+![Alt text](assets/images/pep8.png "PEP8CI Report")
 
 [Back to top](<#contents>)
 
+ ### Bugs and Issues
+Debugging and troubleshooting were done constantly throughout development.
 
- ### Unsolved bugs
+the PEP8CI presented a few flags regarding to the diagrams and the solutions I found for those was to add "r" before some to the diagrams layout and a "# noqa" and the end of the diagrams, as you can see highlighted in the yellow box of the image below:
 
-Debugging and troubleshooting were done constantly throughout development, however still a problem with the website:
+ ![Alt text](./assets/images/diagrams-solution.png "Diagrams Solution")
 
-When the user reaches the 10th question and tries to open the a new card the Game Over message appears on the modal popup but in the top right corner it counts as a "question" as displayed in the image below. One of the solutions would make the modal popup bigger when the message is displayed so it would cover the tally area. But I was not happy "hiding" the bug, I wanted to have a proper and better idea of solution, but unfurtunatly haven't managed the time to review the code and re-design a best solution yet.
-
- ![Alt text](./assets/images/game-over-message.png "Game Over Message")
-
+ The links a found the solution are credited in the [Credits](#credits) section of this file.
 
 [Back to top](<#contents>)
 
@@ -211,14 +207,13 @@ ___
 
 ## Technologies Used
 I used the following technologies, platforms and support in building my project:
-- Wireframes and mockups were designed in [**Balsamiq**](https://balsamiq.com/wireframes/desktop/#)
-- The website is built with HTML, CSS and JavaScript.
+- The application was built in Python.
 - The [**Code Institute**](https://codeinstitute.net/) modules/lessons aided my learning and many of the concepts learned were applied in this project.
 - [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) was used for the project repository.
-- [**Google Fonts**](https://fonts.google.com/) was used for all fonts on the site.
-- [**FontAwesome**](https://fontawesome.com/) was used for the social media icons which then had additional styling applied to them.
-- [**Colors CO**](https://coolors.co/) was used to create a colour pallete for this readme file.
-- [**Adobe Colors**](https://color.adobe.com/pt/create/color-contrast-analyzer) and contrast was used to pick color and check if the contrast was good enough for users.
+- [**Code Anywhere**](https://app.codeanywhere.com/) - for IDE and editor of the code.
+- [**Heroku**](https://www.heroku.com/platform) was used for application deployment.
+- [**PEP8CI Validator**](https://app.codeanywhere.com/) - for error and issues with the code
+- [**Lucid**](https://lucid.co/) - Flowchart used on readme file.
 
 [Back to top](<#contents>)
 
