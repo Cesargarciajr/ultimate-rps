@@ -237,7 +237,7 @@ def winner(rounds):
             if fatality == "f" or fatality == "F":
                 os.system("clear")
                 print("""
-        \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓
+        \n            █████▒▄▄▄     ▄▄▄█████▓ ▄▄▄       ██▓     ██▓▄▄▄█████▓▓██   ██▓  # noqa
         \r          ▓██   ▒▒████▄   ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒▓  ██▒ ▓▒ ▒██  ██▒
         \r          ▒████ ░▒██  ▀█▄ ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██▒▒ ▓██░ ▒░  ▒██ ██░
         \r          ░▓█▒  ░░██▄▄▄▄██░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ░██░░ ▓██▓ ░   ░ ▐██▓░
@@ -257,7 +257,7 @@ def winner(rounds):
             os.system("clear")
             print(f'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored: {computer_score}               |
+    \r|                    You scored: {user_score} | Computer Scored: {computer_score}               | # noqa
     \r ---------------------------------------------------------------------
     \r                       CONGATULATIONS YOU WON THE GAME!!!
     \n                                .-=========-.
@@ -277,7 +277,7 @@ def winner(rounds):
             os.system("clear")
             print(f'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                | # noqa
     \r ---------------------------------------------------------------------
     \n                         ____
     \r                        / ___| __ _ _ __ ___   ___
@@ -297,7 +297,7 @@ def winner(rounds):
             os.system("clear")
             print(f'''
     \n ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                | # noqa
     \r ---------------------------------------------------------------------
     \n                            ___ _
     \r                           |_ _| |_ ___       __ _
@@ -322,7 +322,7 @@ def return_main():
     # Loop will validate the user input or print invalid option
     while True:
         print("\n")
-        choice = input('\nClick "RUN PROGRAM" button to restart or to Main Menu, press (M): ')
+        choice = input('\nClick "RUN PROGRAM" button to restart or to Main Menu, press (M): ')  # noqa
         if choice == 'M' or choice == 'm':
             menu()
             break
@@ -351,10 +351,10 @@ def start_game():
     while round <= 5:
         print(f'''
     \n ---------------------------------------------------------------------
-    \r|                             ROUND: {round}                                |
+    \r|                             ROUND: {round}                                | # noqa
     \r ---------------------------------------------------------------------
-    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |
-    \r ---------------------------------------------------------------------''')
+    \r|                    You scored: {user_score} | Computer Scored:{computer_score}                |# noqa
+    \r ---------------------------------------------------------------------''')  # noqa
         # Call the function to get user input and checks if user chose gun
         # to break the loop
         user_choice = get_user_input()
@@ -461,4 +461,3 @@ def main():
 
 # Calling function to Start the Program
 main()
-
