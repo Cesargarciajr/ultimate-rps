@@ -301,7 +301,7 @@ Open your terminal (or Git Bash on Windows) and navigate to the directory where 
 
 ## Acknowledgments
 
-This project was fun and challanging at the same time. I learned so much while developing and trying to enhance a simple and old game was the biggest creative challange. My mentor [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) was fundamental to guide me and take the right approaches to the project, I can not forget to say a huge thanks to [**Tiago Fortaleza Gai**](https://www.linkedin.com/in/tiago-fortaleza-gai/) that helped me a lot with programming logics and helped me to debbug the code when I was stucked. I loved the final version of the game and I can say I'm proud of the final version and excited to keep updating and adding future features.
+This project was fun and challenging at the same time. I learned so much while developing and trying to enhance a simple and old game was the biggest creative challange. My mentor [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) was fundamental to guide me and take the right approaches to the project, I can not forget to say a huge thanks to [**Tiago Fortaleza Gai**](https://www.linkedin.com/in/tiago-fortaleza-gai/) that helped me a lot with programming logics and helped me to debbug the code when I was stucked. I loved the final version of the game and I can say I'm proud of the final version and excited to keep updating and adding future features.
 
 by [**Cesar Garcia**](https://github.com/Cesargarciajr)
 
