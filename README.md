@@ -15,7 +15,6 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
     - [FlowChart](#flowchart)
-    - [Site Structure](#site-structure)
     - [Desing Choices](#design-choices)
   - [Features](#features)
     - [Landing Play Page](#landing-play-page)
@@ -24,7 +23,6 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
     - [Rules](#rules-menu-option)
     - [Credits](#credits-menu-option)
     - [Start Game](#start-game-menu-option)
-    - [Game Over Message](#game-over-message)
     - [Selected Valid Option](#selected-valid-option)
     - [Comparing Computer vs User choices](#comparing-computer-vs-user-choices)
     - [Tied Round](#tied-round)
@@ -34,7 +32,10 @@ The Ultimate RPS is a fun and diferent approach for one of the most famous games
   - [Testing](#testing)
     - [Bugs and Issues](#bugs-and-issues)
   - [Technologies Used](#technologies-used)
-  - [Deployment](#deployment) 
+  - [Deployment](#deployment)
+    - [GitHub Deployment](#gitHub-deployment)
+    - [Cloning Repo](#cloning-the-repo)
+    - [Forking Repo](#forking-the-repo)
     - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
     - [Content](#content)
@@ -179,7 +180,7 @@ If the user wins 3 out of 5 rounds the user will be asked to "finish" the comput
 [Back to top](<#contents>)
 
   ### Future Features
-For feature features I think would be nice to make a colourful game for better user experience also implement if the user wins 3 times in a row he could activate the "nuclear bomb" and win the game. Those hidden features could make a difference and keep the users interested to play more and discover and unlock them. Also by adding a "raking" where user the input name and challange friends and keep record how many times user beated the computer.
+For future features I think would be nice to make a colourful game for better user experience also implement if the user wins 3 times in a row he could activate the "nuclear bomb" and win the game. Those hidden features could make a difference and keep the users interested to play more and discover and unlock them. Also by adding a "raking" where user the input name and challange friends and keep record how many times user beated the computer.
 
 
 [Back to top](<#contents>)
@@ -221,7 +222,7 @@ I used the following technologies, platforms and support in building my project:
 
 <details>
 <summary>GitHub Deployment</summary>
-First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) account, I choose [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) because it's free and easy to create a repository to host your code and share with others.
+First of all you need to have a <bold><link rel="GitHub" href="https://github.com/Cesargarciajr/bloom-of-life) account, I choose [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life"></bold> because it's free and easy to create a repository to host your code and share with others.
 
 - To create a repository you just need to go to the main page at the top right you will see a "+" button just click here and then new repository
 
