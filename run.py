@@ -223,16 +223,16 @@ def winner(rounds):
         if user_score == 3:
             os.system("clear")
             print(r"""
-        \n                    You WON 3 rounds!
-        \r                       FINISH HIM!
-        \r                             _______
-        \r           __,_____         |.-----.|
-        \r          / __.==--"        ||x . x||
-        \r         /#(-'              ||_.-._||
-        \r         `-'                `--)-(--`
-        \r                           __[=== o]___
-        \r                          |:::::::::::|\
-        \r                          `-=========-`()""")  # noqa
+                            You WON 3 rounds!
+                               FINISH HIM!
+                                     _______
+                   __,_____         |.-----.|
+                  / __.==--"        ||x . x||
+                 /#(-'              ||_.-._||
+                 `-'                `--)-(--`
+                                   __[=== o]___
+                                  |:::::::::::|\
+                                  `-=========-`()""")  # noqa
             fatality = input("\nPress (F) for FATALITY: ")
             if fatality == "f" or fatality == "F":
                 os.system("clear")
